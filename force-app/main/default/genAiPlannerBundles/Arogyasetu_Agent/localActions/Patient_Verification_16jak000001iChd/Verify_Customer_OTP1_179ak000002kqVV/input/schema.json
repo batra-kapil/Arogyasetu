@@ -1,0 +1,28 @@
+{
+  "required" : [ "PatientOTP", "SentOTP" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AccountId" : {
+      "title" : "AccountId",
+      "description" : "Store Account ID if not null",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "PatientOTP" : {
+      "title" : "PatientOTP",
+      "description" : "Store Patient OTP",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "SentOTP" : {
+      "title" : "SentOTP",
+      "description" : "Store Sent OTP",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

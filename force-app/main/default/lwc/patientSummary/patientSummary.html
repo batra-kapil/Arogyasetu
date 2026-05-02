@@ -1,0 +1,31 @@
+<template>
+            <!-- Empty State -->
+            <template if:false={hasSummary}>
+                <div class="empty">
+                    No patient summary available yet.
+                </div>
+            </template>
+
+            <!-- Summary -->
+            <template if:true={hasSummary}>
+                <div class="summary-card">
+
+                    <!-- Header -->
+                    <div class="header">
+                        <span class="icon">💡</span>
+                        <span class="title">Clinical Insight</span>
+                    </div>
+
+                    <!-- Patient Name -->
+                    <div class="patient-name">
+                        {patientName}
+                    </div>
+
+                    <!-- Summary Text -->
+                    <div class="summary-text">
+                        {summary}
+                    </div>
+
+                </div>
+            </template>
+</template>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Patient_Summary</developerName>
+    <masterLabel>Patient Summary</masterLabel>
+    <overridable>false</overridable>
+    <relatedEntity>Account</relatedEntity>
+    <relatedField>Account.Patient_Summary__c</relatedField>
+    <templateVersions>
+        <content>You are a healthcare assistant responsible for generating a clear, detailed, and clinically useful summary of a patient’s journey.
+Your goal is to provide a concise yet information-rich overview that helps healthcare staff quickly understand the patient’s history, engagement, and upcoming care.
+Y🔥 INPUT DATA
+You will receive:
+Patient details - {!$RecordSnapshot:Account.snapshot}
+Appointment Records - {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+🎯 TASK
+Using the provided data, generate a detailed patient summary that includes:
+👤 Patient Overview
+Name and engagement status
+📅 Appointment Insights
+Total number of appointments
+Most recent appointment (with date and doctor) take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+Next upcoming appointment (with date and doctor, if available)take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+ 
+Specialty trend (if identifiable)
+Preferred doctor or facility (if clear) take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+📊 Engagement Analysis
+Visit consistency (frequent / occasional / low) take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+Missed or cancelled appointments (if any) take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+🚨 STRICT RULES (VERY IMPORTANT)
+ALWAYS include:
+At least one exact date take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+At least one doctor name take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+Total appointment count take it from {!$Flow:Fetch_Patient_s_Appointments.Prompt}
+Do NOT use vague phrases like:
+“multiple visits”
+“recent appointment”
+Do NOT repeat raw input text
+Do NOT include IDs or system data
+Do NOT hallucinate missing data
+If data is unavailable, simply omit it (do NOT say “not available”)
+
+For Appointment data only relay on {!$Flow:Fetch_Patient_s_Appointments.Prompt} and do not add any irrelevant data.
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:Account</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>flow://Fetch_Patient_s_Appointments</definition>
+            <label>Fetch Patient&apos;s Appointments</label>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>false</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Fetch_Patient_s_Appointments</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>Ev47dXIK0iNOxwaTKElYOl2J6rIubmYLYPDFWNohRoo=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

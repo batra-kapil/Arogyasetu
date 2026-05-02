@@ -1,0 +1,19 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "addresses" : {
+      "title" : "addresses",
+      "description" : "Display the addresses",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__FetchNearbyFacilities$AddressWrapper"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

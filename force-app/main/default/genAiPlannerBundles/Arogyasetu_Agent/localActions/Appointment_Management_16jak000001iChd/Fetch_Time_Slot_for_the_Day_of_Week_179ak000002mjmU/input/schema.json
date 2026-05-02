@@ -1,0 +1,21 @@
+{
+  "required" : [ "DayOfWeek", "HealthcareProviderId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "DayOfWeek" : {
+      "title" : "DayOfWeek",
+      "description" : "Store the day of the week patient wants to have their booking modified",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "HealthcareProviderId" : {
+      "title" : "HealthcareProviderId",
+      "description" : "Store the helathcare provider ID found from the patient's booked appointment",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

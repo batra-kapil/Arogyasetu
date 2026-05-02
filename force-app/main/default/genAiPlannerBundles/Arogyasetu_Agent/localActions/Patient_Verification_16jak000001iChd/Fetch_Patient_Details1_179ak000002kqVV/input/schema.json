@@ -1,0 +1,49 @@
+{
+  "required" : [ "FirstName", "LastName", "MobileNumber", "PatientAge", "PatientGender" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "FirstName" : {
+      "title" : "FirstName",
+      "description" : "Store First Name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "LastName" : {
+      "title" : "LastName",
+      "description" : "Store Last Name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "MobileNumber" : {
+      "title" : "MobileNumber",
+      "description" : "Store Mobile Number",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "PatientAge" : {
+      "title" : "PatientAge",
+      "description" : "Store Age",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "PatientGender" : {
+      "title" : "PatientGender",
+      "description" : "Store Gender",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Reason" : {
+      "title" : "Reason",
+      "description" : "Describe and store the intent and concern of the patient and why they have reached out to us. Reason should be explained in detail.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,42 @@
+{
+  "required" : [ "AccountID", "DoctorId", "Subject" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AccountID" : {
+      "title" : "AccountID",
+      "description" : "Store VerifiedCustomerId",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "AdditionalInformation" : {
+      "title" : "AdditionalInformation",
+      "description" : "None",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "DoctorId" : {
+      "title" : "DoctorId",
+      "description" : "Store HealthcareProviderID",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "SelectedTimeValue" : {
+      "title" : "SelectedTimeValue",
+      "description" : "Store TimeValue from the time patient select",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Subject" : {
+      "title" : "Subject",
+      "description" : "Store Subject",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

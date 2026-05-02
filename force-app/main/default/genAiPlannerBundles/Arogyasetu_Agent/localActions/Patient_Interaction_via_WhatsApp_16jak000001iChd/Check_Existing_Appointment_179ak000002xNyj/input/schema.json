@@ -1,0 +1,14 @@
+{
+  "required" : [ "PatientAccountId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "PatientAccountId" : {
+      "title" : "PatientAccountId",
+      "description" : "Store VerifiedCustomerId",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,23 @@
+<template>
+
+    <lightning-card title="Patient Overview" icon-name="standard:account">
+
+        <div class="container">
+
+            <!-- Patient Summary -->
+            <div class="section">
+                <c-patient-summary record-id={recordId}></c-patient-summary>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Appointments -->
+            <div class="section">
+                <c-appointment-summary record-id={recordId}></c-appointment-summary>
+            </div>
+        </div>
+
+    </lightning-card>
+
+</template>

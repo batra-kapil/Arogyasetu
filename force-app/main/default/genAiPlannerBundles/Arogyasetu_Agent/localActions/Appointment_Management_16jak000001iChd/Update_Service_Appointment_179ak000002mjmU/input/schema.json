@@ -1,0 +1,21 @@
+{
+  "required" : [ "AppointmentId", "SelectedTimeValue" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AppointmentId" : {
+      "title" : "AppointmentId",
+      "description" : "Store the ServiceAppointmentId of the appointment record which patient wants to update.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "SelectedTimeValue" : {
+      "title" : "SelectedTimeValue",
+      "description" : "Store TimeValue from the time patient select",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

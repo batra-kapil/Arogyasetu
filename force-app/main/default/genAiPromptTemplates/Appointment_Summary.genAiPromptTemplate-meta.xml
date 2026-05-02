@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Appointment_Summary</developerName>
+    <masterLabel>Appointment Summary</masterLabel>
+    <overridable>false</overridable>
+    <templateVersions>
+        <content>You are a healthcare assistant responsible for summarizing a patient’s appointment history.
+Using the provided appointment data, generate a concise and structured summary that highlights the patient’s interaction with healthcare services.
+{!$RecordSnapshot:appointment.snapshot}
+
+🔥 INPUT DATA (IMPORTANT)
+You will receive appointment-related information associated with a patient.
+ This may include:
+Appointment dates
+Doctors
+Status (Scheduled, Completed, Cancelled)
+Location
+Specialty (if available)
+🎯 WHAT TO EXTRACT
+From the available data, identify and summarize:
+📅 Appointment Overview
+Total number of appointments
+Most recent appointment (date + doctor)
+Next upcoming appointment (if any)
+👨‍⚕️ Care Pattern
+Frequently consulted doctor (if clear)
+Specialty trend (if available)
+⚠️ Engagement Signals
+Missed or cancelled appointments (if noticeable)
+Overall engagement (active / occasional / inactive) 
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>Account</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>Account</masterLabel>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>appointment</apiName>
+            <definition>SOBJECT://ServiceAppointment</definition>
+            <masterLabel>appointment</masterLabel>
+            <referenceName>Input:appointment</referenceName>
+            <required>false</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:appointment.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:appointment</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>Ev47dXIK0iNOxwaTKElYOl2J6rIubmYLYPDFWNohRoo=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

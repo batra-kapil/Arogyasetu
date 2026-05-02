@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v1</fullName>
+    <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Hello, I’m your Onco Global Care Assistant. I’m here to support you in finding the right cancer care services based on your needs.
+
+I can help you locate nearby Onco Global centers, connect you with the right specialists, check doctor availability, and assist with booking or managing your appointments.
+
+If you’re experiencing any symptoms or have concerns, I’m here to guide you to the right care and support.</message>
+                <messageIdentifier>c1a737b3-8851-4480-b3c9-0e247b78a390</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>9248cdeb-42f2-440c-ba5c-85528b0d8044</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>c0080cf9-5716-4c6a-8eca-622fa0ae035d</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Welcome</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Hi! I&apos;m your helpful bot.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Something went wrong.</message>
+                <messageIdentifier>0638715b-82b6-4508-b27e-6fa26d8f73c0</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>489f6b61-e60e-4c62-9f79-0d542b7c5f40</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>26bacbaa-4034-46cc-9fce-8c309c1ec588</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Error_Handling</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Unfortunately, a system error occurred. Let us start again.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <citationsEnabled>false</citationsEnabled>
+    <company>Onco Global is a leading cancer care network in India with 10+ hospitals and a massive database of 500,000 registered patients.</company>
+    <conversationDefinitionPlanners>
+        <genAiPlannerName>Arogyasetu_Agent</genAiPlannerName>
+    </conversationDefinitionPlanners>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
+        <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>VerifiedCustomerId</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>MobileNumber</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>MobileNumber</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>AccountId</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>AccountId</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>SentOTP</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>SentOTP</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Boolean</dataType>
+        <developerName>Verified</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>Verified</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>DoctorName</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>DoctorName</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <defaultStdObjForContactIdFltrEnabled>false</defaultStdObjForContactIdFltrEnabled>
+    <entryDialog>Welcome</entryDialog>
+    <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+    <intentV3Enabled>false</intentV3Enabled>
+    <isScriptCompatibleAgent>false</isScriptCompatibleAgent>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
+    <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <role>Acts as an oncology care navigator, helping patients find specialists, explore facilities, and manage appointments with personalized guidance.</role>
+    <smallTalkEnabled>false</smallTalkEnabled>
+    <staticPromptsEnabled>false</staticPromptsEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
+    <surfacesEnabled>false</surfacesEnabled>
+    <toneType>Casual</toneType>
+</BotVersion>

@@ -1,0 +1,21 @@
+<template>
+    <div class="summary-card">
+
+        <div class="header">
+            📅 Appointment Insight
+        </div>
+
+        <template if:true={hasSummary}>
+            <div class="text">
+                {summary}
+            </div>
+        </template>
+
+        <template if:false={hasSummary}>
+            <div class="empty">
+                No appointment data available.
+            </div>
+        </template>
+
+    </div>
+</template>

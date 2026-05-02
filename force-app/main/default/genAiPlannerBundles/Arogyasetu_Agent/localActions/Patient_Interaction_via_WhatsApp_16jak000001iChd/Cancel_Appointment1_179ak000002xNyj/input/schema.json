@@ -1,0 +1,21 @@
+{
+  "required" : [ "AppointmentId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AppointmentId" : {
+      "title" : "AppointmentId",
+      "description" : "Store the appointment ID.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "ReasonForCancellation" : {
+      "title" : "ReasonForCancellation",
+      "description" : "Understand from customer's intent and store it here.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

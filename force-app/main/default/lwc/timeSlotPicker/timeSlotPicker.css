@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.slot {
+    padding: 10px 14px;
+    border-radius: 20px;
+    background: #f4f6f9;
+    border: 1px solid #d8dde6;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.slot:hover {
+    background: #e3f2fd;
+    border-color: #1b96ff;
+}
+
+.slot.selected {
+    background: #1b96ff;
+    color: white;
+    border-color: #1b96ff;
+    font-weight: 600;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}

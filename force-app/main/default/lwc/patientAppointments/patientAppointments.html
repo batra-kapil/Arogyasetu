@@ -1,0 +1,124 @@
+<template>
+    <lightning-card title="Patient Appointments" icon-name="standard:event">
+
+        <!-- ❌ EMPTY STATE -->
+        <template if:false={hasAppointments}>
+            <div class="empty-state">
+                No appointments found
+            </div>
+        </template>
+
+        <!-- ✅ CONTENT -->
+        <template if:true={hasAppointments}>
+
+            <!-- ⭐ NEXT APPOINTMENT -->
+            <template if:true={nextAppointment}>
+                <div class="section-header">
+                    ✨ Next Appointment 
+                    <span class="countdown">{nextAppointment.countdown}</span>
+                </div>
+
+                <div class={nextAppointment.cardClass}>
+
+                    <!-- Header -->
+                    <div class="header">
+
+                        <div class="doctor">
+                            👨‍⚕️ {nextAppointment.doctorName}
+                        </div>
+
+                        <div class="right">
+                            <span class={nextAppointment.tagClass}>
+                                {nextAppointment.tagLabel}
+                            </span>
+
+                            <span class={nextAppointment.statusClass}>
+                                {nextAppointment.status}
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="subject">
+                        📝 {nextAppointment.subject}
+                    </div>
+
+                    <!-- Date -->
+                    <div class="date">
+                        📅 {nextAppointment.formattedDate}
+                    </div>
+
+                </div>
+            </template>
+
+            <!-- 🔵 UPCOMING -->
+            <template if:true={upcomingAppointments.length}>
+                <div class="section-header">Upcoming</div>
+
+                <template for:each={upcomingAppointments} for:item="appointment">
+                    <div key={appointment.id} class={appointment.cardClass}>
+
+                        <div class="header">
+
+                            <div class="doctor">
+                                👨‍⚕️ {appointment.doctorName}
+                            </div>
+
+                            <div class="right">
+                                <span class={appointment.statusClass}>
+                                    {appointment.status}
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="subject">
+                            📝 {appointment.subject}
+                        </div>
+
+                        <div class="date">
+                            📅 {appointment.formattedDate}
+                        </div>
+
+                    </div>
+                </template>
+            </template>
+
+            <!-- ⚪ PAST -->
+            <template if:true={pastAppointments.length}>
+                <div class="section-header">Past Visits</div>
+
+                <template for:each={pastAppointments} for:item="appointment">
+                    <div key={appointment.id} class={appointment.cardClass}>
+
+                        <div class="header">
+
+                            <div class="doctor">
+                                👨‍⚕️ {appointment.doctorName}
+                            </div>
+
+                            <div class="right">
+                                <span class={appointment.statusClass}>
+                                    {appointment.status}
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="subject">
+                            📝 {appointment.subject}
+                        </div>
+
+                        <div class="date">
+                            📅 {appointment.formattedDate}
+                        </div>
+
+                    </div>
+                </template>
+            </template>
+
+        </template>
+
+    </lightning-card>
+</template>

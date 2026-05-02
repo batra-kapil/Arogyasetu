@@ -1,0 +1,24 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "webSearchSummary" : {
+      "title" : "Summary of Web Search",
+      "description" : "A prompt that summarizes information from the web search for use in the action.",
+      "lightning:type" : "lightning__richTextType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "citationSources" : {
+      "title" : "Citation Sources",
+      "description" : "Source links from the retrieved content used in the web search summary.",
+      "lightning:type" : "@apexClassType/AiCopilot__GenAiCitationInput",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

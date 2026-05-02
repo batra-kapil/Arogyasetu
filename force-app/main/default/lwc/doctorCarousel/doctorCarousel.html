@@ -1,0 +1,94 @@
+<template>
+    <template if:true={doctors.length}>
+
+        <div class="slds-p-around_small">
+
+            <template for:each={doctors} for:item="doc">
+
+                <div key={doc.id} class="slds-box slds-m-bottom_medium slds-theme_default">
+
+                    <div class="slds-grid slds-gutters slds-align_absolute-center">
+
+                        <!-- Image -->
+                        <div class="slds-col slds-size_1-of-4 slds-align_absolute-center">
+                            <img src={doc.imageUrl}
+                                 style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid #f3f3f3;" />
+                        </div>
+
+                        <!-- Info -->
+                        <div class="slds-col slds-size_3-of-4">
+
+                            <!-- Name -->
+                            <div class="slds-text-heading_small slds-text-title_bold slds-m-bottom_xx-small">
+                                {doc.name}
+                            </div>
+
+                            <!-- Type + Class -->
+                            <div class="slds-text-body_small slds-text-color_weak slds-m-bottom_x-small">
+                                {doc.type} • {doc.providerClass}
+                            </div>
+
+                            <!-- Specialty -->
+                            <template if:true={doc.specialty}>
+                                <div class="slds-m-bottom_x-small">
+                                    <span class="slds-badge slds-theme_info">
+                                        🩺 {doc.specialty}
+                                    </span>
+                                </div>
+                            </template>
+
+                            <!-- Languages -->
+                            <template if:true={doc.language}>
+                                <div class="slds-text-body_small slds-text-color_weak">
+                                    🌐 {doc.language}
+                                </div>
+                            </template>
+                            <!-- Visiting Hours -->
+                            <template if:true={doc.timeSlots}>
+                                <!-- Visiting Hours -->
+                                <div class="slds-m-top_x-small">
+
+                                    <div class="slds-grid slds-align-center">
+
+                                        <!-- Icon -->
+                                        <div class="slds-m-right_x-small">
+                                            🕒
+                                        </div>
+
+                                        <!-- Content -->
+                                        <div>
+
+                                            <div class="slds-text-body_small slds-text-color_weak slds-m-bottom_x-small">
+                                                Visiting Hours
+                                            </div>
+
+                                            <template for:each={doc.timeSlots} for:item="slot">
+                                                <div key={slot} class="slds-text-body_small slds-text-color_weak slds-m-bottom_x-small">
+                                                    {slot}
+                                                </div>
+                                            </template>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </template>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </template>
+
+    <template if:false={doctors.length}>
+        <div class="slds-text-align_center slds-p-around_medium">
+            No doctors found
+        </div>
+    </template>
+</template>

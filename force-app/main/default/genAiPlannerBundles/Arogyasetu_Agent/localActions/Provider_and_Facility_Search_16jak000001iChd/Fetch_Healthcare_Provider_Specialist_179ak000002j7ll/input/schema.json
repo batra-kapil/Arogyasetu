@@ -1,0 +1,21 @@
+{
+  "required" : [ "AddressId", "Speciality" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AddressId" : {
+      "title" : "AddressId",
+      "description" : "Store Address ID",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Speciality" : {
+      "title" : "Speciality",
+      "description" : "Store Specialty",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

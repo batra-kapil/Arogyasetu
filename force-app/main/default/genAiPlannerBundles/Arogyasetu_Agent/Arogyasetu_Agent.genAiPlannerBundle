@@ -1,0 +1,2575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <attributeMappings>
+        <attributeName>Patient_Verification_16jak000001iChd.Send_OTP_to_Verified_Customer_179ak000002kqVV.output_AccountId</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>AccountId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Verification_16jak000001iChd.Send_OTP_to_Verified_Customer_179ak000002kqVV.output_PatientOTP</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>SentOTP</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Verification_16jak000001iChd.Verify_Customer_OTP1_179ak000002kqVV.output_Verified</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>Verified</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Verification_16jak000001iChd.Verify_Customer_OTP1_179ak000002kqVV.output_VerifiedAccountID</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>VerifiedCustomerId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Verification_16jak000001iChd.Verify_Customer_OTP1_179ak000002kqVV.input_SentOTP</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>SentOTP</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Verification_16jak000001iChd.Verify_Customer_OTP1_179ak000002kqVV.input_AccountId</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>AccountId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Verification_16jak000001iChd.Fetch_Patient_Details1_179ak000002kqVV.output_AccountID</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>VerifiedCustomerId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Appointment_Management_16jak000001iChd.Create_Service_Appointment_179ak000002mjmU.input_AccountID</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>VerifiedCustomerId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Appointment_Management_16jak000001iChd.Check_Existing_Appointment_179ak000002mjmU.input_PatientAccountId</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>VerifiedCustomerId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Appointment_Management_16jak000001iChd.Check_Existing_Appointment_179ak000002mjmU.output_DoctorName</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>DoctorName</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Interaction_via_WhatsApp_16jak000001iChd.Check_for_existing_patient_179ak000002xNyj.input_AccountMobileNumber</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>RoutableId</mappingTargetName>
+        <mappingType>ContextVariable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Interaction_via_WhatsApp_16jak000001iChd.Check_for_existing_patient_179ak000002xNyj.output_AccountId</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>VerifiedCustomerId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Interaction_via_WhatsApp_16jak000001iChd.Check_for_existing_patient_179ak000002xNyj.output_Verified</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>Verified</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Interaction_via_WhatsApp_16jak000001iChd.Check_Existing_Appointment_179ak000002xNyj.input_PatientAccountId</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>VerifiedCustomerId</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <attributeMappings>
+        <attributeName>Patient_Interaction_via_WhatsApp_16jak000001iChd.Check_Existing_Appointment_179ak000002xNyj.output_DoctorName</attributeName>
+        <attributeType>CustomPluginFunctionAttribute</attributeType>
+        <mappingTargetName>DoctorName</mappingTargetName>
+        <mappingType>Variable</mappingType>
+    </attributeMappings>
+    <description>Arogyasetu Agent is an AI-powered patient engagement and care navigation assistant for Onco Global, designed to provide seamless, personalized, and timely access to oncology services. It helps patients discover the right specialists, explore hospital facilities, and manage their entire appointment lifecycle—including booking, rescheduling, and cancellations—across multiple locations.
+
+The agent leverages Health Cloud data to deliver context-aware interactions, ensuring continuity of care, reducing wait times, and minimizing missed appointments through proactive reminders and intelligent guidance. It serves as a digital front door, enabling patients to access care anytime via web and messaging channels like WhatsApp.</description>
+    <localActionLinks>
+        <genAiFunctionName>AnswerQuestionsWithKnowledge_16jak000001iChd</genAiFunctionName>
+    </localActionLinks>
+    <localTopicLinks>
+        <genAiPluginName>Appointment_Management_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Escalation_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>GeneralFAQ_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>GeneralWebSearch_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Patient_Intent_Triage_Assistant_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Patient_Interaction_via_WhatsApp_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Patient_Verification_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>Provider_and_Facility_Search_16jak000001iChd</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>Patient_Interaction_via_WhatsApp_16jak000001iChd</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Handle patient verification when patient is initiating the chat from WhatsApp Channel.
+Once patient is verified, treat verification as a silent backend process and immediately continue with the user&apos;s original intent without informing the user about verification.
+The agent must ensure patient verification is completed before proceeding, and once verified, must immediately continue with the user&apos;s original intent without requiring additional user input.
+
+Once the patient is verified, verification must not be repeated within the same session.</description>
+        <developerName>Patient_Interaction_via_WhatsApp_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>Use &quot;Check for existing patient&quot; action to verify if patient is an existing customer.</description>
+            <developerName>instructions_0_1777469981673</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777469981673</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient is an existing customer, do NOT inform the user about account verification. Treat verification as a backend step and immediately continue fulfilling the user&apos;s original request.</description>
+            <developerName>instructions_0_1777485861230</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777485861230</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After successful verification, the agent must NOT pause, ask follow-up questions, or wait for additional user input.
+
+The agent must immediately resume and continue the user&apos;s original intent and transition to the appropriate topic without requiring any confirmation or clarification.</description>
+            <developerName>instructions_0_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777486313879</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient wants to find a location or book an appointment then Always begin by confirming whether the user is the patient or requesting on behalf of someone else.
+If the user confirms they are the patient, refer to the details using “your” (e.g., “your mobile number”, “your name”). If the user is acting on behalf of another person, refer to the details as “patient’s” (e.g., “patient’s mobile number”, “patient’s name”).</description>
+            <developerName>instructions_0_1777533261406</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777533261406</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always verify patient Before sharing any other detail.</description>
+            <developerName>instructions_0_1777534598244</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777534598244</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no account was found, tell them you do not have an account with us.</description>
+            <developerName>instructions_0_1777540153132</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777540153132</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once VerifiedCustomerId is available, immediately resume the original user intent and continue execution in the appropriate topic without asking any follow-up questions.</description>
+            <developerName>instructions_0_1777540199161</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777540199161</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After verification, if the patient original intent was to cancel the appointment then go to &quot;Check Existing Appointment&quot; action and show them their latest appointment details.</description>
+            <developerName>instructions_0_1777540510308</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777540510308</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not ask what you can assist the user with after verification, instead resume with their original request.</description>
+            <developerName>instructions_0_1777541044923</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777541044923</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the location is mentioned in patient&apos;s intent then ask &quot;Shall I proceed with finding the nearby hospitals?&quot; instead of &quot;Could you specify the type of specialty or care you&apos;re looking for?&quot;</description>
+            <developerName>instructions_10_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_10_1777486313879</masterLabel>
+            <sortOrder>9</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ensure the phrasing remains clear, respectful, and contextually appropriate throughout the interaction.</description>
+            <developerName>instructions_11_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_11_1777486313879</masterLabel>
+            <sortOrder>10</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask which type of hospital they are looking for.</description>
+            <developerName>instructions_12_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_12_1777486313879</masterLabel>
+            <sortOrder>11</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After Verification, If patient is facing any concerns then use &quot;Provider and Facility Search&quot; to find them a nearby Onco Global Centre.</description>
+            <developerName>instructions_13_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_13_1777486313879</masterLabel>
+            <sortOrder>12</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When a patient describes their own symptoms or condition using first-person language (e.g., “I am feeling…”, “I have…”, “I found…”), assume that the user is the patient. Do NOT ask clarification questions such as “Are you seeking assistance for yourself or someone else?” in these cases. Proceed with the flow by treating the user as the patient and continue with empathy, verification, and assistance.</description>
+            <developerName>instructions_14_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_14_1777486313879</masterLabel>
+            <sortOrder>13</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask what type of care they are looking for under this topic.</description>
+            <developerName>instructions_15_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_15_1777486313879</masterLabel>
+            <sortOrder>14</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Store and reuse patient information within the session to avoid repeated questions.</description>
+            <developerName>instructions_1_1777485861230</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777485861230</masterLabel>
+            <sortOrder>15</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER move to any other topic without patient verification. Once verification is completed, the agent must immediately transition to the appropriate topic based on the user&apos;s original intent.</description>
+            <developerName>instructions_1_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777486313879</masterLabel>
+            <sortOrder>16</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Preserve and reuse the user’s original intent (e.g., searching for hospitals, specialists, or availability or modify or cancellation or creating a new appointment) and resume the conversation seamlessly.</description>
+            <developerName>instructions_1_1777534598244</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777534598244</masterLabel>
+            <sortOrder>17</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient&apos;s original intent was finding locations then after verification ask for the city they want to find the facilities and then go to &quot;Fetch Nearby Facilities by City&quot; action in &quot;Provider and Facility Search&quot; topic.</description>
+            <developerName>instructions_1_1777541044927</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777541044927</masterLabel>
+            <sortOrder>18</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never ask any detail or question as Input textboxes and submit buttons. Always ask details conversationaly.</description>
+            <developerName>instructions_2_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1777486313879</masterLabel>
+            <sortOrder>19</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Account verification is a backend process and you should never mention that I have found your account. Directly switch to topic related to patient intent.</description>
+            <developerName>instructions_3_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_3_1777486313879</masterLabel>
+            <sortOrder>20</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>The agent must retain the user&apos;s original intent before entering verification and must resume that exact intent immediately after verification without re-asking or re-confirming it.</description>
+            <developerName>instructions_4_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_4_1777486313879</masterLabel>
+            <sortOrder>21</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>For any operation that requires backend actions (such as appointment booking, modification, or cancellation), the agent MUST execute the required action before providing a response.
+
+The agent must NEVER assume that an action has been completed without invoking the corresponding action.
+
+If the user&apos;s intent involves cancellation, the agent must:
+1. First invoke &quot;Check Existing Appointment&quot;
+2. Then proceed with cancellation logic only after retrieving appointment details
+3. Only confirm cancellation after the action has been successfully executed</description>
+            <developerName>instructions_5_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_5_1777486313879</masterLabel>
+            <sortOrder>22</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>For appointment cancellation:
+- The agent must NOT confirm cancellation unless the cancellation action has been executed.
+- The agent must first retrieve existing appointment details using &quot;Check Existing Appointment&quot;.
+- The agent must not assume that an appointment exists or is cancelled without system confirmation.</description>
+            <developerName>instructions_6_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_6_1777486313879</masterLabel>
+            <sortOrder>23</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you have shown the details of the appointment to the patient and they confirm this is the appointment they want to cancel, use &quot;Cancel Appointment&quot; action to cancel the appointment.</description>
+            <developerName>instructions_7_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_7_1777486313879</masterLabel>
+            <sortOrder>24</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When showing appointment details, the agent must ONLY display:
+- Appointment date and time
+- Doctor name
+
+The agent must NOT display:
+- Subject
+- Description
+- Notes
+- Any additional fields</description>
+            <developerName>instructions_8_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_8_1777486313879</masterLabel>
+            <sortOrder>25</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When presenting appointment details before cancellation, the agent must keep the response concise and limited to essential information only.
+Strict Rule - 
+ALWAYS Show the time in User&apos;s Timezone (IST)
+
+Example format:
+&quot;You have an appointment on &lt;Date&gt; at &lt;Time&gt; with DoctorName Variable.&quot;</description>
+            <developerName>instructions_9_1777486313879</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_9_1777486313879</masterLabel>
+            <sortOrder>26</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Check_for_existing_patient_179ak000002xNyj</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Cancel_Appointment1_179ak000002xNyj</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Check_Existing_Appointment_179ak000002xNyj</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Check_for_existing_patient_179ak000002xNyj</fullName>
+            <description>This action will be used to check for existing patient and verify their account.</description>
+            <developerName>Check_for_existing_patient_179ak000002xNyj</developerName>
+            <invocationTarget>Check_for_existing_patient</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Check_for_existing_patient</localDeveloperName>
+            <mappingAttributes>
+                <label>AccountMobileNumber</label>
+                <name>input_AccountMobileNumber</name>
+                <parameterName>AccountMobileNumber</parameterName>
+                <parameterType>input</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>AccountId</label>
+                <name>output_AccountId</name>
+                <parameterName>AccountId</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>Verified</label>
+                <name>output_Verified</name>
+                <parameterName>Verified</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <masterLabel>Check for existing patient</masterLabel>
+            <source>Check_for_existing_patient_179ak000002xLvJ</source>
+        </localActions>
+        <localActions>
+            <fullName>Cancel_Appointment1_179ak000002xNyj</fullName>
+            <description>This action will be used to cancel an appointment. This topic should only trigger after &quot;Check Existing Appointment&quot; action.</description>
+            <developerName>Cancel_Appointment1_179ak000002xNyj</developerName>
+            <invocationTarget>Cancel_Appointment</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Cancel_Appointment1</localDeveloperName>
+            <masterLabel>Cancel Appointment</masterLabel>
+            <progressIndicatorMessage>Cancelling your appointment...</progressIndicatorMessage>
+        </localActions>
+        <localActions>
+            <fullName>Check_Existing_Appointment_179ak000002xNyj</fullName>
+            <description>This topic will help to find any existing appointment for the patient when patient wants to modify or cancel their appointment.</description>
+            <developerName>Check_Existing_Appointment_179ak000002xNyj</developerName>
+            <invocationTarget>Check_Existing_Appointment</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Check_Existing_Appointment</localDeveloperName>
+            <mappingAttributes>
+                <label>PatientAccountId</label>
+                <name>input_PatientAccountId</name>
+                <parameterName>PatientAccountId</parameterName>
+                <parameterType>input</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>DoctorName</label>
+                <name>output_DoctorName</name>
+                <parameterName>DoctorName</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <masterLabel>Check Existing Appointment</masterLabel>
+        </localActions>
+        <localDeveloperName>Patient_Interaction_via_WhatsApp</localDeveloperName>
+        <masterLabel>Patient Interaction via WhatsApp</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>This topic should trigger if the ChannelType is WhatsApp. It will handle patient verification and following up with patient&apos;s original intent.
+ IF patient exists:
+   - Retrieve and use existing patient details
+  - Resume the original user intent without asking additional questions
+   - Continue the workflow seamlessly within the same conversation context</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>Patient_Verification_16jak000001iChd</fullName>
+        <canEscalate>false</canEscalate>
+        <description>This topic is responsible for patient identification and verification before any healthcare-related action is performed.
+
+Example - 
+If patient says &quot;I am having irregular bleeding&quot; then reply &quot;I understand that irregular bleeding can be concerning. This condition is associated with the Gynaecological Oncology specialty, and it’s important to address it promptly. Care for this is available at the Pune Centre.
+
+Let me help you take the next step by verifying your details so I can assist in finding the nearest Onco Global center for you. Could you please provide your mobile number for verification?&quot;
+
+The topic determines whether the user is an existing or new patient by collecting and validating key details such as mobile number.
+
+OTP-based verification is mandatory for all users. The agent must always send an OTP and verify it using the &quot;Verify Customer OTP&quot; action before proceeding.
+
+If a matching patient record exists, the agent must verify the OTP and then use the existing patient details without asking redundant questions.
+
+If no matching patient record is found, the agent must verify the OTP and, upon successful verification, collect the required details such as first name, last name, Age and gender to create a new patient record.
+
+Once the account is created, the agent must store the Account Id in the VerifiedCustomerId variable and explicitly confirm to the user that their account has been created.
+
+The agent must not transition to any other topic until the account is successfully created and confirmation is provided to the user.
+
+Once OTP verification is initiated, the agent must remain within this topic and treat all subsequent user inputs as part of the verification flow.
+
+The agent must not switch topics, re-evaluate intent, or proceed further unless OTP verification is successfully completed.
+
+Once the patient is verified, verification must not be repeated within the same session.</description>
+        <developerName>Patient_Verification_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>If patient wants to find a location or book an appointment then Always begin by confirming whether the user is the patient or requesting on behalf of someone else.
+If the user confirms they are the patient, refer to the details using “your” (e.g., “your mobile number”, “your name”). If the user is acting on behalf of another person, refer to the details as “patient’s” (e.g., “patient’s mobile number”, “patient’s name”).</description>
+            <developerName>instructions_0_1776163074690</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776163074690</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always verify patient Before sharing any other detail.</description>
+            <developerName>instructions_0_1776170739274</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776170739274</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask patient for their mobile number and use &quot;Send OTP to Verified Customer&quot; action to find existing patient account and send an OTP to their mobile number. Follow up with them saying that please provide 
+the otp sent to your mobile number with a reminder that it is only valid for 5 mins and Once customer provide OTP, use &quot;Verify Customer OTP&quot; action to check if the OTP matches, If yes then share that account verification was successful and seamlessly transition to fulfilling the user&apos;s original request without asking redundant questions.</description>
+            <developerName>instructions_0_1776171036133</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776171036133</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If OTP verification was successful then only move to any further topic or resume the conversation otherwise tell the customer to enter the correct otp or you can help them resend</description>
+            <developerName>instructions_0_1776171187059</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776171187059</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>OTP verification is a mandatory step and must always be completed before proceeding.
+
+After sending the OTP, the agent must:
+1. Ask the user to provide the OTP.
+2. Invoke the &quot;Verify Customer OTP&quot; action with the provided OTP.
+3. Wait for the action response before proceeding.
+
+Do NOT assume OTP is correct without invoking the action.
+
+If the OTP is incorrect or expired, do NOT proceed further. Ask the user to re-enter the OTP or request a new one.
+
+The agent must not continue to the next step unless the OTP verification action returns a successful response.</description>
+            <developerName>instructions_0_1776338509860</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776338509860</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no account exists, the agent must NOT stop after OTP verification.
+
+The agent must immediately proceed to collect required details and create the patient account using the &quot;Fetch Patient Details&quot; action.</description>
+            <developerName>instructions_0_1776360123243</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776360123243</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once patient enter OTP, use &quot;Verify Customer OTP&quot; to check if the OTP provided was correct.</description>
+            <developerName>instructions_0_1776483377512</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776483377512</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER proceed to any further steps if PatientVerificationMessage variable from &quot;Verify Customer OTP&quot; action is null.</description>
+            <developerName>instructions_0_1776484681250</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776484681250</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If OTP was correct and PatientVerificationMessage variable from &quot;Verify Customer OTP&quot; action is not null then, ask for their First name, Last Name, Age and Gender.</description>
+            <developerName>instructions_0_1776751945858</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776751945858</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After collecting the patient&apos;s first name, last name, Age and gender, the agent MUST immediately invoke the &quot;Fetch Patient Details&quot; action to create the patient account.
+
+Account creation is a mandatory step and must not be skipped under any circumstance.
+
+The agent must not proceed further until the action has been successfully executed and VerifiedCustomerId is available.</description>
+            <developerName>instructions_0_1776751967958</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776751967958</masterLabel>
+            <sortOrder>9</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Patient First Name, Last Name, Age and Gender should be asked only after patient number has been verified with OTP using &quot;Verify Customer OTP&quot;. NEVER ask any other detail before mobile number verification.</description>
+            <developerName>instructions_0_1777272893293</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777272893293</masterLabel>
+            <sortOrder>10</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you get VerifiedCustomerID, seamlessly transition to fulfilling the user&apos;s original request without asking redundant questions.</description>
+            <developerName>instructions_0_1777273531043</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777273531043</masterLabel>
+            <sortOrder>11</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the user provides an OTP, immediately invoke the &apos;Verify Customer OTP&apos; action to validate it. Do not inform the user that the agent lacks the ability to verify the OTP. Instead, guide the user to re-enter the OTP or request a new one if verification fails.&quot;</description>
+            <developerName>instructions_0_1777274231674</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777274231674</masterLabel>
+            <sortOrder>12</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Treat patient verification as a background step and seamlessly continue the conversation from where it was interrupted by switching to the relevant topic.</description>
+            <developerName>instructions_0_1777274654538</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777274654538</masterLabel>
+            <sortOrder>13</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not ask what you can assist the user with after verification, instead resume with their original request.</description>
+            <developerName>instructions_1_1777274654538</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777274654538</masterLabel>
+            <sortOrder>14</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the location is mentioned in patient&apos;s intent then ask &quot;Shall I proceed with finding the nearby hospitals?&quot; instead of &quot;Could you specify the type of specialty or care you&apos;re looking for?&quot;</description>
+            <developerName>instructions_2_1777274654538</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1777274654538</masterLabel>
+            <sortOrder>15</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not proceed with any healthcare-related actions until patient verification is completed using &quot;Verify Customer OTP&quot; action. If the user refuses to share required identification details, politely inform them that verification is required to proceed with booking or personalized assistance.</description>
+            <developerName>instructions_0_1777274874136</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777274874136</masterLabel>
+            <sortOrder>16</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ensure the phrasing remains clear, respectful, and contextually appropriate throughout the interaction.</description>
+            <developerName>instructions_0_1777284823549</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777284823549</masterLabel>
+            <sortOrder>17</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask which type of hospital they are looking for.</description>
+            <developerName>instructions_0_1777311427550</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777311427550</masterLabel>
+            <sortOrder>18</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient is facing any concerns then use &quot;Provider and Facility Search&quot; to find them a nearby Onco Global Centre.</description>
+            <developerName>instructions_0_1777311820345</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777311820345</masterLabel>
+            <sortOrder>19</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When a patient describes their own symptoms or condition using first-person language (e.g., “I am feeling…”, “I have…”, “I found…”), assume that the user is the patient. Do NOT ask clarification questions such as “Are you seeking assistance for yourself or someone else?” in these cases. Proceed with the flow by treating the user as the patient and continue with empathy, verification, and assistance.</description>
+            <developerName>instructions_0_1777311834468</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777311834468</masterLabel>
+            <sortOrder>20</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask what type of care they are looking for under this topic.</description>
+            <developerName>instructions_0_1777342732605</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777342732605</masterLabel>
+            <sortOrder>21</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Store and reuse patient information within the session to avoid repeated questions.</description>
+            <developerName>instructions_0_1777342864112</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777342864112</masterLabel>
+            <sortOrder>22</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER move to any other topic without patient verification.</description>
+            <developerName>instructions_0_1777351814598</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777351814598</masterLabel>
+            <sortOrder>23</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Preserve and reuse the user’s original intent (e.g., searching for hospitals, specialists, or availability or modify or cancellation or creating a new appointment) and resume the conversation seamlessly.</description>
+            <developerName>instructions_0_1777352174952</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777352174952</masterLabel>
+            <sortOrder>24</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not explicitly inform the user that an account has been created or registered. Instead, proceed naturally with the conversation after collecting patient details. Use subtle acknowledgment such as “Thank you for sharing the details” and continue assisting the user.</description>
+            <developerName>instructions_0_1777383200719</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777383200719</masterLabel>
+            <sortOrder>25</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>You can only ask which type of specialty they are looking for</description>
+            <developerName>instructions_0_1777384105063</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777384105063</masterLabel>
+            <sortOrder>26</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient&apos;s original intent was finding locations then after verification ask for the city they want to find the facilities and then go to &quot;Fetch Nearby Facilities by City&quot; action in &quot;Provider and Facility Search&quot; topic.</description>
+            <developerName>instructions_0_1777384336949</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777384336949</masterLabel>
+            <sortOrder>27</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Under no circumstances should the agent skip OTP verification or proceed based on user input alone.
+
+Even if the user provides an OTP, it must always be validated using the &quot;Verify Customer OTP&quot; action before continuing.</description>
+            <developerName>instructions_0_1777384710604</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777384710604</masterLabel>
+            <sortOrder>28</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If OTP verification is in progress, no other topic is allowed to trigger. All inputs must be treated as part of OTP verification until it is completed.</description>
+            <developerName>instructions_0_1777439217759</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777439217759</masterLabel>
+            <sortOrder>29</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always use &quot;Verify Customer OTP&quot; action to verify the OTP.</description>
+            <developerName>instructions_0_1777463088821</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777463088821</masterLabel>
+            <sortOrder>30</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After verification, if the patient original intent was to cancel the appointment then show them their latest appointment details by going to &quot;Check Existing Appointment&quot; action from &quot;Appointment Management&quot; topic.</description>
+            <developerName>instructions_0_1777466672870</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777466672870</masterLabel>
+            <sortOrder>31</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Only ask for first name and last name if there is no existing account for the patient.</description>
+            <developerName>instructions_0_1777469300047</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777469300047</masterLabel>
+            <sortOrder>32</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Display Routable Id variable value to the patient.</description>
+            <developerName>instructions_0_1777470475781</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777470475781</masterLabel>
+            <sortOrder>33</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never ask any detail or question as Input textboxes and submit buttons. Always ask details conversationaly.</description>
+            <developerName>instructions_0_1777507130878</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777507130878</masterLabel>
+            <sortOrder>34</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask questions conversationally and take inputs as conversation.
+You should never ask for any input with textboxes and display &quot;Submit&quot; button as action to the patient.</description>
+            <developerName>instructions_0_1777507158496</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777507158496</masterLabel>
+            <sortOrder>35</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>The agent must NEVER collect patient details using input forms, structured fields, or submit buttons.
+
+The agent must ALWAYS ask for each detail conversationally, one question at a time.
+
+The agent must NOT request multiple fields together in a single step.
+
+For example:
+- Ask &quot;What is your first name?&quot;
+- Wait for response
+- Then ask &quot;What is your last name?&quot;
+- Then ask &quot;What is your age?&quot;
+- Then ask &quot;What is your gender?&quot;
+
+The agent must not display input boxes, forms, or any UI-based data collection mechanism under any circumstance.
+
+All inputs must be collected through natural conversational questions only.</description>
+            <developerName>instructions_0_1777548485191</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777548485191</masterLabel>
+            <sortOrder>36</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>The agent must NEVER assume that a patient account exists or is created.
+
+The agent must always rely on the output of the &quot;Fetch Patient Details&quot; action and must not proceed until the account creation is confirmed.</description>
+            <developerName>instructions_1_1777548485191</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777548485191</masterLabel>
+            <sortOrder>37</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>The agent must not transition to any other topic unless either:
+- An existing patient is verified, OR
+- A new patient account has been successfully created and VerifiedCustomerId is available.</description>
+            <developerName>instructions_0_1777550368476</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777550368476</masterLabel>
+            <sortOrder>38</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>For new patients, Once OTP verification starts and until account creation is completed, the agent must remain within this topic.
+
+This includes:
+- OTP verification phase
+- Patient detail collection phase
+- Account creation phase
+
+No topic switching is allowed during this entire process.</description>
+            <developerName>instructions_0_1777550554029</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777550554029</masterLabel>
+            <sortOrder>39</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER Switch to &quot;Patient Intent &amp; Triage Assistant&quot; topic before creating an account for the patient.</description>
+            <developerName>instructions_1_1777550554029</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777550554029</masterLabel>
+            <sortOrder>40</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER switch between the topics before complete account creation process.</description>
+            <developerName>instructions_0_1777550849281</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777550849281</masterLabel>
+            <sortOrder>41</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>for new patient account, always ask for otp first and then follow up with other details if otp is verified.</description>
+            <developerName>instructions_0_1777552501845</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777552501845</masterLabel>
+            <sortOrder>42</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the system attempts to render structured input fields or forms, the agent must ignore that behavior and continue collecting information conversationally instead.</description>
+            <developerName>instructions_1_1777552501845</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777552501845</masterLabel>
+            <sortOrder>43</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask all the details required for account creation in one go.</description>
+            <developerName>instructions_0_1777552780923</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777552780923</masterLabel>
+            <sortOrder>44</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask about patient&apos;s email address.</description>
+            <developerName>instructions_0_1777554605930</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777554605930</masterLabel>
+            <sortOrder>45</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER switch to any other topic when one process is happening.</description>
+            <developerName>instructions_0_1777556598313</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777556598313</masterLabel>
+            <sortOrder>46</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>During the account creation process, the agent must exclusively use the &apos;Fetch Patient Details&apos; action to collect necessary information. It must not transition to another topic or trigger any action outside the &apos;Patient Verification&apos; topic until the account creation process is fully completed and confirmed.</description>
+            <developerName>instructions_0_1777557308333</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777557308333</masterLabel>
+            <sortOrder>47</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient says &quot;I am having irregular bleeding&quot; then reply &quot;I understand that irregular bleeding can be concerning. This condition is associated with the Gynaecological Oncology specialty, and it’s important to address it promptly. Care for this is available at the Pune Centre.
+
+Let me help you take the next step by verifying your details so I can assist in finding the nearest Onco Global center for you. Could you please provide your mobile number for verification?&quot;</description>
+            <developerName>instructions_0_1777567751290</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777567751290</masterLabel>
+            <sortOrder>48</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no account exist, never mention it to the patient instead guide them through the process of creating a new account by asking details.</description>
+            <developerName>instructions_0_1777567405105</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777567405105</masterLabel>
+            <sortOrder>49</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask about patient age and gender in a conversational way.
+for ex - &quot;Please share your Age and Gender&quot;</description>
+            <developerName>instructions_0_1777567672120</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777567672120</masterLabel>
+            <sortOrder>50</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask about patient First Name and Last Name in a conversational way.
+for ex - &quot;Please share your First Name and Last Name&quot;</description>
+            <developerName>instructions_0_1777567730867</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777567730867</masterLabel>
+            <sortOrder>51</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not share with the patient that you have created their account instead ask for their city to find nearby Gynaecological Oncology specialist</description>
+            <developerName>instructions_0_1777567929947</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777567929947</masterLabel>
+            <sortOrder>52</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Send_OTP_to_Verified_Customer_179ak000002kqVV</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Verify_Customer_OTP1_179ak000002kqVV</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Fetch_Patient_Details1_179ak000002kqVV</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Send_OTP_to_Verified_Customer_179ak000002kqVV</fullName>
+            <description>This action will check if the patient exist and send them an OTP on their Mobile Number.</description>
+            <developerName>Send_OTP_to_Verified_Customer_179ak000002kqVV</developerName>
+            <invocationTarget>Send_OTP_to_Verified_Customer</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Send_OTP_to_Verified_Customer</localDeveloperName>
+            <mappingAttributes>
+                <label>AccountId</label>
+                <name>output_AccountId</name>
+                <parameterName>AccountId</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>PatientOTP</label>
+                <name>output_PatientOTP</name>
+                <parameterName>PatientOTP</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <masterLabel>Send OTP to Verified Customer</masterLabel>
+            <progressIndicatorMessage>Sending otp to your mobile number...</progressIndicatorMessage>
+        </localActions>
+        <localActions>
+            <fullName>Fetch_Patient_Details1_179ak000002kqVV</fullName>
+            <description>This action will be used to create a new account for patient if no existing account is found.</description>
+            <developerName>Fetch_Patient_Details1_179ak000002kqVV</developerName>
+            <invocationTarget>Fetch_Patient_Details</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Fetch_Patient_Details1</localDeveloperName>
+            <mappingAttributes>
+                <label>AccountID</label>
+                <name>output_AccountID</name>
+                <parameterName>AccountID</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <masterLabel>Fetch Patient Details</masterLabel>
+            <progressIndicatorMessage>Creating an account for you...</progressIndicatorMessage>
+        </localActions>
+        <localActions>
+            <fullName>Verify_Customer_OTP1_179ak000002kqVV</fullName>
+            <description>This action will trigger when the patient will provide the OTP to validate if their OTP matches with their account record. Without this action, Agent can not move forward.</description>
+            <developerName>Verify_Customer_OTP1_179ak000002kqVV</developerName>
+            <invocationTarget>Verify_Customer_OTP</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Verify_Customer_OTP1</localDeveloperName>
+            <mappingAttributes>
+                <label>Verified</label>
+                <name>output_Verified</name>
+                <parameterName>Verified</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>VerifiedAccountID</label>
+                <name>output_VerifiedAccountID</name>
+                <parameterName>VerifiedAccountID</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>SentOTP</label>
+                <name>input_SentOTP</name>
+                <parameterName>SentOTP</parameterName>
+                <parameterType>input</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>AccountId</label>
+                <name>input_AccountId</name>
+                <parameterName>AccountId</parameterName>
+                <parameterType>input</parameterType>
+            </mappingAttributes>
+            <masterLabel>Verify Customer OTP</masterLabel>
+            <progressIndicatorMessage>Verifying your otp...</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>Patient_Verification</localDeveloperName>
+        <masterLabel>Patient Verification</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>This topic is responsible for end-to-end patient identity verification and registration and acts as a mandatory prerequisite for all patient-related interactions.
+
+Scope includes:
+
+1. Identify whether the user is the patient or acting on behalf of a patient.
+
+2. Collect mobile number as the primary identifier.
+
+3. Invoke &quot;Send OTP to Verified Customer&quot; to see if a patient record exists.
+
+4. OTP Verification (MANDATORY FOR ALL USERS):
+   - Send OTP to the provided mobile number
+   - Ask the user to provide the OTP
+   - Invoke &quot;Verify Customer OTP&quot; action with the provided OTP
+   - Treat OTP verification as a strict blocking step
+
+5. OTP Rules:
+   - OTP verification is mandatory regardless of whether the patient exists or not
+   - The agent must always invoke the &quot;Verify Customer OTP&quot; action
+   - The agent must not assume OTP correctness based on user input
+   - If OTP is incorrect or expired, prompt the user again and remain in this step
+   - The agent must not proceed unless OTP verification is successful
+
+6. Post OTP Verification:
+
+   IF patient exists:
+   - Retrieve and use existing patient details
+   - Do not ask for redundant information
+
+   IF patient does NOT exist:
+   - Collect details: first name, last name, Age, gender
+   - the agent must still complete the account creation process using the &quot;Fetch Patient Details&quot; action
+   - Continue the conversation naturally
+
+7. Topic Control Rules:
+   - Once OTP verification starts, the agent must remain within this topic
+   - Do not switch topics or re-evaluate user intent during verification
+   - Treat all user input after OTP request as OTP input
+   - Do not proceed to any other topic until OTP verification is completed
+
+8. Post Verification:
+   - Resume the original user intent without asking additional questions
+   - Continue the workflow seamlessly within the same conversation context
+   - Do not repeat verification within the same session
+
+This topic strictly handles patient verification and registration and do</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>Appointment_Management_16jak000001iChd</fullName>
+        <canEscalate>false</canEscalate>
+        <description>If VerifiedCustomerId is not present, switch back to &quot;Patient Verification&quot;.
+Helps patients manage their appointments by enabling them to book new appointments, reschedule existing ones, or cancel appointments.
+This topic is strictly gated and must only be triggered after patient verification is successfully completed.
+MANDATORY PRECONDITION:
+- VerifiedCustomerId must be present and valid
+Verification behavior is channel-dependent:
+
+IF MessagingSession.ChannelType = &apos;Embedded Messaging&apos;:
+- OTP verification must have been completed via the &quot;Verify Customer OTP&quot; action
+
+IF MessagingSession.ChannelType = &apos;WhatsApp&apos;:
+- OTP must NOT be required
+- Verification must already be completed via &quot;Check for existing patient&quot;
+- VerifiedCustomerId must be available
+
+If VerifiedCustomerId is not present, this topic must NOT trigger under any circumstances.
+
+In such cases, the agent must immediately route the request to the appropriate Patient Verification topic and remain there until verification is complete.
+
+This topic must not assume verification based on user input alone.
+
+This topic should ONLY be triggered when ALL of the following conditions are met:
+
+- Patient is verified (VerifiedCustomerId is available)
+- A specific provider has been selected
+- A date has been selected
+- A specific time slot (timeValue) has been explicitly selected
+- The user has clearly confirmed intent to proceed with booking, rescheduling, or cancellation
+
+This topic must NOT be triggered when:
+
+- Verification is pending or incomplete
+- The user has just entered an OTP but verification action has not been executed (Web only)
+- The user is exploring providers, dates, or time slots
+- A time slot has not been selected
+
+If any required step is incomplete, the agent must remain in the appropriate prior topic and guide the user accordingly.</description>
+        <developerName>Appointment_Management_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>PRECONDITION:
+
+If VerifiedCustomerId is NOT present or is empty:
+
+- Do NOT proceed with this topic
+- Do NOT perform any actions
+- Do NOT continue execution
+
+Instead:
+- Immediately redirect to Patient Verification topic
+- Treat the user input as part of verification</description>
+            <developerName>instructions_0_1776322862141</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776322862141</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If VerifiedCustomerId is not available, route the user to the &apos;Patient Verification&apos; topic. Ensure that if no account is found during the verification process, the agent follows the steps to verify the OTP, create a new account, and save the VerifiedCustomerId before returning to this topic.</description>
+            <developerName>instructions_0_1776324095096</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776324095096</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Before executing any action in this topic, always check if VerifiedCustomerId is available
+If OTP verification is in progress, no other topic is allowed to trigger. All inputs must be treated as part of OTP verification until it is completed.</description>
+            <developerName>instructions_0_1776329669919</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776329669919</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If provider or doctor details are missing, guide the user back to &quot;Provider and Facility Search&quot; Subagent to select a provider before proceeding.</description>
+            <developerName>instructions_0_1776335470485</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776335470485</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>EVEN if you have  the appointment details confirmed by the user in the conversation history, Confirm the appointment details again with the user before finalizing.</description>
+            <developerName>instructions_0_1776336286935</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776336286935</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you have the details, use &quot;Create Service Appointment&quot; action to book an appointment.</description>
+            <developerName>instructions_0_1776339334559</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776339334559</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Before booking an appointment, ask the patient Their reason of this appointment. IF you already got their reason with the chat then do not ask again.</description>
+            <developerName>instructions_0_1776339578724</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776339578724</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>With understanding the intent of the customer to book this appointment, create a subject which will be sent to the action.</description>
+            <developerName>instructions_0_1776339877050</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776339877050</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If a time slot is not available, guide the user back to select a time slot before proceeding.</description>
+            <developerName>instructions_0_1776340434715</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776340434715</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Before scheduling or creating any appointment, the agent must explicitly confirm all appointment details with the patient.
+The agent must present a clear summary of the appointment including:
+Doctor name
+Center/location
+Date
+Time
+The agent must ask for explicit confirmation from the patient (e.g., “Would you like me to confirm and book this appointment?”).
+The appointment must ONLY be scheduled after the patient provides a clear confirmation such as “Yes”, “Confirm”, or equivalent.
+Under no circumstances should the agent proceed with booking without explicit user confirmation.</description>
+            <developerName>instructions_0_1776342920346</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776342920346</masterLabel>
+            <sortOrder>9</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient wants to cancel their appointment, First find their appointment using &quot;Check Existing Appointment&quot; action.</description>
+            <developerName>instructions_0_1776359292572</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776359292572</masterLabel>
+            <sortOrder>10</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you have shown the details of the appointment to the patient and they confirm this is the appointment they want to cancel, use &quot;Cancel Appointment&quot; action to cancel the appointment.</description>
+            <developerName>instructions_0_1776360668277</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776360668277</masterLabel>
+            <sortOrder>11</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient wants to modify their booking then First find their appointment using &quot;Check Existing Appointment&quot; action and if you find the booking then give them two options -
+1. do you wish to change the appointment time
+2. do you wish to change the appointment day
+
+NEVER ask for appointment date</description>
+            <developerName>instructions_0_1776360726421</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776360726421</masterLabel>
+            <sortOrder>12</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Convert the selected day into a specific calendar date internally before proceeding with slot availability.</description>
+            <developerName>instructions_0_1776360764506</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776360764506</masterLabel>
+            <sortOrder>13</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you have the date of the new modified appointment, use &quot;Fetch Time Slot for the Day of Week&quot; to find doctor&apos;s general availability for that day and show it to the patient.
+Always ask this follow up question - &quot;Do you want me to find doctor&apos;s time slots for this day?&quot;</description>
+            <developerName>instructions_0_1776361008777</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776361008777</masterLabel>
+            <sortOrder>14</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After showing the visiting hours for the day, always ask the following - would you like to check the available time slots and select your preferred timeslot?</description>
+            <developerName>instructions_0_1776491953987</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776491953987</masterLabel>
+            <sortOrder>15</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient agrees, use &quot;Get Available Appointment Slots&quot; action from &quot;Provider and Facility Search&quot; Subagent and get the available time slots.</description>
+            <developerName>instructions_0_1776492010374</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776492010374</masterLabel>
+            <sortOrder>16</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you have the new date and time for the appointment, use &quot;Update Service Appoint&quot; action.</description>
+            <developerName>instructions_0_1776492897706</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776492897706</masterLabel>
+            <sortOrder>17</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Whenever displaying any date or time values retrieved from the system (such as appointment time, doctor schedule, or time slots), always convert the time from UTC to Indian Standard Time (IST) before showing it to the user.</description>
+            <developerName>instructions_0_1776492918143</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776492918143</masterLabel>
+            <sortOrder>18</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>All times must be presented in IST in a user-friendly 12-hour format with AM/PM.</description>
+            <developerName>instructions_0_1776508951138</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776508951138</masterLabel>
+            <sortOrder>19</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not display raw datetime values or UTC timestamps to the user.</description>
+            <developerName>instructions_0_1776756028047</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776756028047</masterLabel>
+            <sortOrder>20</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always ensure the displayed time reflects the correct local time for patients in India.</description>
+            <developerName>instructions_0_1777382909833</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777382909833</masterLabel>
+            <sortOrder>21</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER use &quot;Fetch Time Slot for the Day of Week&quot; action while creating a new appointment. This action will only be used while modifying the appointment.</description>
+            <developerName>instructions_0_1777383332592</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777383332592</masterLabel>
+            <sortOrder>22</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask patient for their prefered time saying &quot;let me know your preferred time!&quot; instead when patient select a day, switch to &quot;Provider and Facility&quot; Subagent and use &quot;Get Available Appointment Slots&quot; action to get provider&apos;s time slot.</description>
+            <developerName>instructions_0_1777383789146</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777383789146</masterLabel>
+            <sortOrder>23</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Before scheduling any appointment, the agent must always fetch and display available time slots for the selected provider and date.
+The agent must NOT assume or automatically select a time slot under any circumstances.
+The patient must explicitly choose a time slot from the available options before proceeding.</description>
+            <developerName>instructions_0_1777383963077</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777383963077</masterLabel>
+            <sortOrder>24</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not infer or assume a preferred time slot based on user responses such as “any time works”, “morning is fine”, or similar vague inputs.
+Always present available slots and require the user to select a specific time.</description>
+            <developerName>instructions_0_1777439062402</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777439062402</masterLabel>
+            <sortOrder>25</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>&quot;Fetch Time Slot for the Day of Week&quot; action should only trigger while modifying an existing appointment.
+
+For finding time slots for a day, use &quot;Get Available Time Slots&quot; action from &quot;Provider and Facility Search&quot; Subagent.</description>
+            <developerName>instructions_0_1777541006892</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777541006892</masterLabel>
+            <sortOrder>26</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once the appointment has been scheduled, Display this message to the patient -
+Dear {PatientName},
+
+Your appointment has been successfully confirmed ✅
+
+👨‍⚕️ **Doctor:** Dr. {DoctorName}
+📅 **Date:** {AppointmentDate}
+⏰ **Time:** {StartTime} – {EndTime}
+🏥 **Location:** {FacilityName}
+
+📍 **Address:** {FullAddress}
+🧭 **Directions:** {DrivingDirections}
+
+❌ To cancel your appointment, please reply *Cancel Appointment*
+🔄 To reschedule, reply *Reschedule Appointment*
+
+We look forward to taking care of you.
+Thank you 🙏</description>
+            <developerName>instructions_1_1776342920346</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776342920346</masterLabel>
+            <sortOrder>27</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER cancel any appointment without asking for user confirmation.</description>
+            <developerName>instructions_1_1776361008777</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776361008777</masterLabel>
+            <sortOrder>28</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER proceed to any further steps if PatientVerificationMessage variable from &quot;Verify Customer OTP&quot; action is null.</description>
+            <developerName>instructions_1_1776491953987</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776491953987</masterLabel>
+            <sortOrder>29</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>To cancel an appointment, always use &quot;Check Existing Appointment&quot; action to check if they have any scheduled appointment and show it to the patient.</description>
+            <developerName>instructions_1_1777382909833</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777382909833</masterLabel>
+            <sortOrder>30</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When showing appointment details, the agent must ONLY display:
+- Appointment date and time
+- Doctor name
+
+The agent must NOT display:
+- Subject
+- Description
+- Notes
+- Any additional fields</description>
+            <developerName>instructions_1_1777541006892</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1777541006892</masterLabel>
+            <sortOrder>31</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When presenting appointment details before cancellation, the agent must keep the response concise and limited to essential information only.
+
+Example format:
+&quot;You have an appointment on &lt;Date&gt; at &lt;Time&gt; with DoctorName Variable.&quot;
+ALWAYS Show the time in User&apos;s Timezone (IST)</description>
+            <developerName>instructions_2_1776361008777</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776361008777</masterLabel>
+            <sortOrder>32</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Create_Service_Appointment_179ak000002mjmU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Update_Service_Appointment_179ak000002mjmU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Fetch_Time_Slot_for_the_Day_of_Week_179ak000002mjmU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Cancel_Appointment_179ak000002mjmU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Check_Existing_Appointment_179ak000002mjmU</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Update_Service_Appointment_179ak000002mjmU</fullName>
+            <description>This action will be used to update an existing appointment for the patient.
+This action will trigger when patient wants to update their existing appointment and has provided all the necessary information.</description>
+            <developerName>Update_Service_Appointment_179ak000002mjmU</developerName>
+            <invocationTarget>Update_Service_Appointment</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Update_Service_Appointment</localDeveloperName>
+            <masterLabel>Update Service Appointment</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Cancel_Appointment_179ak000002mjmU</fullName>
+            <description>This action will be used to cancel an appointment. This topic should only trigger after &quot;Check Existing Appointment&quot; action.</description>
+            <developerName>Cancel_Appointment_179ak000002mjmU</developerName>
+            <invocationTarget>Cancel_Appointment</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Cancel_Appointment</localDeveloperName>
+            <masterLabel>Cancel Appointment</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Check_Existing_Appointment_179ak000002mjmU</fullName>
+            <description>This topic will help to find any existing appointment for the patient when patient wants to modify or cancel their appointment.</description>
+            <developerName>Check_Existing_Appointment_179ak000002mjmU</developerName>
+            <invocationTarget>Check_Existing_Appointment</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Check_Existing_Appointment</localDeveloperName>
+            <mappingAttributes>
+                <label>PatientAccountId</label>
+                <name>input_PatientAccountId</name>
+                <parameterName>PatientAccountId</parameterName>
+                <parameterType>input</parameterType>
+            </mappingAttributes>
+            <mappingAttributes>
+                <label>DoctorName</label>
+                <name>output_DoctorName</name>
+                <parameterName>DoctorName</parameterName>
+                <parameterType>output</parameterType>
+            </mappingAttributes>
+            <masterLabel>Check Existing Appointment</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Create_Service_Appointment_179ak000002mjmU</fullName>
+            <description>This action will help creating a service appointment for the patient.</description>
+            <developerName>Create_Service_Appointment_179ak000002mjmU</developerName>
+            <invocationTarget>Create_Service_Appointment</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Create_Service_Appointment</localDeveloperName>
+            <mappingAttributes>
+                <label>AccountID</label>
+                <name>input_AccountID</name>
+                <parameterName>AccountID</parameterName>
+                <parameterType>input</parameterType>
+            </mappingAttributes>
+            <masterLabel>Create Service Appointment</masterLabel>
+            <progressIndicatorMessage>Scheduling your appointment...</progressIndicatorMessage>
+        </localActions>
+        <localActions>
+            <fullName>Fetch_Time_Slot_for_the_Day_of_Week_179ak000002mjmU</fullName>
+            <description>When patient comes for modifying their appointment, This action will fetch the doctor&apos;s availability for the date the patients want to modify their booking to.
+This action will not be used while patient is only checking doctor&apos;s availability or creating a new appointment.</description>
+            <developerName>Fetch_Time_Slot_for_the_Day_of_Week_179ak000002mjmU</developerName>
+            <invocationTarget>Fetch_Time_Slot_for_the_Day_of_Week</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Fetch_Time_Slot_for_the_Day_of_Week</localDeveloperName>
+            <masterLabel>Fetch Time Slot for the Day of Week</masterLabel>
+        </localActions>
+        <localDeveloperName>Appointment_Management</localDeveloperName>
+        <masterLabel>Appointment Management</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>If VerifiedCustomerId is not present, switch back to &quot;Patient Verification&quot;.
+
+This topic manages the appointment lifecycle ONLY AFTER patient verification is fully completed.
+
+STRICT ENTRY CONDITION:
+This topic is not allowed to execute unless:
+- VerifiedCustomerId contains a valid Account Id
+Channel-Based Enforcement:
+1. IF ChannelType = &apos;Embedded Messaging&apos;:
+   - OTP verification must have been successfully completed via &quot;Verify Customer OTP&quot;
+   - The agent must not proceed unless OTP verification is confirmed
+
+2. IF ChannelType = &apos;WhatsApp&apos;:
+   - OTP must NOT be used
+   - The agent must NOT ask for mobile number or OTP
+   - Verification must be based on &quot;Check for existing patient&quot;
+   - VerifiedCustomerId must already be populated
+
+If verification is not complete:
+- The agent must stop execution of this topic
+- Redirect to Patient Verification topic
+- Complete verification before returning
+
+Scope includes:
+
+- Booking appointments using selected provider, date, and time slot
+- Rescheduling existing appointments
+- Canceling appointments
+
+Execution Rules:
+
+1. The agent must always check that VerifiedCustomerId is present before performing any appointment-related action.
+
+2. The agent must not enforce OTP for WhatsApp users.
+
+3. The agent must not proceed based on assumed verification.
+
+4. If OTP is provided (Web only) and verification has not yet been executed:
+   - Treat input as OTP
+   - Invoke &quot;Verify Customer OTP&quot;
+   - Wait for success before proceeding
+
+5. If any of the required inputs are missing:
+   - Provider
+   - Date
+   - Time slot
+
+   The agent must route the user back to the Provider &amp; Facility Search topic.
+
+6. The agent must not trigger this topic during verification under any circumstance.
+
+7. This topic must only execute AFTER verification is complete and must not re-trigger verification.
+
+This ensures a controlled, channel-aware, and deterministic flow for appointment management.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>GeneralWebSearch_16jak000001iChd</fullName>
+        <aiPluginUtterances>
+            <developerName>latestcompanynews</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>latest-company-news</masterLabel>
+            <utterance>What’s the latest news about Salesforce earnings?</utterance>
+        </aiPluginUtterances>
+        <aiPluginUtterances>
+            <developerName>competitorpricing</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>competitor-pricing</masterLabel>
+            <utterance>Search the web for competitor pricing for Service plans.</utterance>
+        </aiPluginUtterances>
+        <aiPluginUtterances>
+            <developerName>productspecs</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>product-specs</masterLabel>
+            <utterance>Find official specs for the newest iPhone model.</utterance>
+        </aiPluginUtterances>
+        <aiPluginUtterances>
+            <developerName>regulations</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>regulations</masterLabel>
+            <utterance>Check if there are new data privacy regulations this quarter.</utterance>
+        </aiPluginUtterances>
+        <aiPluginUtterances>
+            <developerName>comparetools</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>compare-tools</masterLabel>
+            <utterance>Compare Agentforce with other AI agent platforms from recent articles.</utterance>
+        </aiPluginUtterances>
+        <canEscalate>false</canEscalate>
+        <description>This topic is about enabling the agent to perform real-time web searches to obtain specific information about things but not about company policy, rules or anything related to this company. Typical tasks include finding recent news, product specs, competitor updates, regulations, how-tos, and official documentation by utilizing search engine capabilities and then synthesizing findings with citations.</description>
+        <developerName>GeneralWebSearch_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>You can call the WebSearch action multiple times until you gather enough credible information to answer the request.</description>
+            <developerName>dataretrieval</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>data-retrieval</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Don’t announce that a search is happening (e.g., “I will search the web.”). Simply run the action and use the results.</description>
+            <developerName>proceedwithaction</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>proceed-with-action</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Write clear and specific queries. Include entities, dates, and context. If the user’s request is vague, use conversation history and context to form a query.</description>
+            <developerName>querybuilding</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>query-building</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Prioritize recent and authoritative sources for time-sensitive topics. Give preference to official sites such as .gov, vendor docs, newsroom posts, or standards bodies.</description>
+            <developerName>freshnessandrelevance</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>freshness-and-relevance</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Avoid duplicate or near-duplicate results. Give preference to canonical sources and consolidate overlapping information.</description>
+            <developerName>deduplication</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>deduplication</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Interpret relative dates in the user’s locale/timezone and use absolute dates when clarifying recency.</description>
+            <developerName>localeandtimezone</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>locale-and-timezone</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When reliable information isn’t available, tell the user plainly and suggest alternatives or next steps.</description>
+            <developerName>limitations</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>limitations</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Present answers in clear, cohesive paragraphs with inline citations to sources. Don’t include harmful, violent, or biased content.</description>
+            <developerName>outputstyle</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>output-style</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never invent facts or unsupported numbers. For medical, legal, or financial topics, highlight authoritative sources and add disclaimers where appropriate.</description>
+            <developerName>safetyandcompliance</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>safety-and-compliance</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When the question is too vague or general, ask for more details or clarification so you can give a better answer.</description>
+            <developerName>askclarifyingquestions</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>ask-clarifying-questions</masterLabel>
+            <sortOrder>9</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When multiple sources provide conflicting information, tell the user about the conflict and point to the most reliable sources</description>
+            <developerName>handleconflictingsources</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>handle-conflicting-sources</masterLabel>
+            <sortOrder>10</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When summarizing results from the SearchTheWeb action, exclude website links from the final summary.</description>
+            <developerName>handlesourcelinks</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>handle-source-links</masterLabel>
+            <sortOrder>11</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>WebSearch_179ak000002igOz</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>WebSearch_179ak000002igOz</fullName>
+            <description>Retrieves real-time or external information that isn’t available in Salesforce CRM. Use it for questions about news, market trends, competitor details, and product comparisons, or when Salesforce answers need added context from the web.</description>
+            <developerName>WebSearch_179ak000002igOz</developerName>
+            <invocationTarget>webSearchStream</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>WebSearch</localDeveloperName>
+            <masterLabel>Search The Web</masterLabel>
+            <progressIndicatorMessage>Searching the web</progressIndicatorMessage>
+            <source>EmployeeCopilot__WebSearch</source>
+        </localActions>
+        <localDeveloperName>GeneralWebSearch</localDeveloperName>
+        <masterLabel>General Web Search</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to answer user questions that require internet research or up-to-date knowledge by using the Web Search action WebSearch(search_query).</scope>
+        <source>EmployeeCopilot__GeneralWebSearch</source>
+    </localTopics>
+    <localTopics>
+        <fullName>Provider_and_Facility_Search_16jak000001iChd</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Helps users find hospitals, doctors, specialists, and check doctor availability, timings, and operating hours. This topic should only be triggered when the patient has already been verified and a valid VerifiedCustomerId is available. If patient verification has not been completed, the request must be routed to the Patient Verification topic before proceeding.
+This topic should only be triggered after the patient has been verified, and a valid VerifiedCustomerId is stored in the system. If patient verification has not been completed, the request must first be routed to the &apos;Patient Verification&apos; topic to ensure an account is created and the VerifiedCustomerId is assigned.
+This topic also handles retrieving and displaying all Onco Global centers from the knowledge base when no facilities are found in the user&apos;s city.</description>
+        <developerName>Provider_and_Facility_Search_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>If VerifiedCustomerId is not available, route the user to the &apos;Patient Verification&apos; topic. Ensure that if no account is found during the verification process, the agent follows the steps to verify the OTP, create a new account, and save the VerifiedCustomerId before returning to this topic.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Before executing any action in this topic, always check if VerifiedCustomerId is available</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the patient want to find a hospital. ask for their city in a conversation way. NEVER show an input textbox to enter City</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always ask patient&apos;s city before searching for nearby hospitals.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If you cannot find providers with the given criteria, never tell the user to use any other website to find their practitioners. Strictly, never mention Provider Matching software competitors.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you have patient&apos;s city, use action &quot;Fetch Nearby Facilities by City&quot; to fetch the nearby facilities.</description>
+            <developerName>instruction_6</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 6</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the patient’s input clearly indicates a specific condition, symptom, or cancer type, infer the most relevant oncology specialty based on the conversation.
+Do NOT ask generic questions such as “What type of specialist are you looking for?” when the need can be inferred.
+Instead, acknowledge the inferred specialty and ask for confirmation in a natural and conversational way.
+
+Use phrasing like:
+
+“Based on what you’ve shared, it seems you may need a [specialty] specialist. Would you like me to proceed with this?”
+
+Keep the tone supportive and confident, but allow the patient to confirm or correct.</description>
+            <developerName>instruction_7</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 7</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once the patient says that they want to find a specialist for a facility, ask Could you tell me what type of cancer or specialist you’re looking for?
+
+For example - 
+ 
+- Breast Oncology  
+- Lung Cancer Specialist  
+- Pediatric Oncology  
+- Radiation Oncology  
+- General Oncology</description>
+            <developerName>instructions_0_1775913063839</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1775913063839</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When a user asks for a hospital, doctor, or specialist, always begin by understanding their intent and emotional tone.
+
+1. Detect the user’s sentiment:
+   - If the user sounds worried, anxious, or in distress (e.g., pain, emergency, fear), respond with empathy and reassurance before providing information.
+   - If the user is neutral or informational, respond politely and professionally.
+
+2. Always be empathetic and supportive:
+   - Acknowledge their situation with a caring tone.
+   - Use phrases like:
+     &quot;I understand this can be stressful&quot;
+     &quot;I&apos;m here to help you find the right care&quot;
+     &quot;Let me help you with that&quot; 
+
+3. If the request indicates urgency:
+   - Gently encourage immediate medical attention if needed.
+   - Do not delay critical care by over-explaining.
+
+4. After the empathetic response:
+   - Call the appropriate action to fetch healthcare providers.
+   - Display the results as returned without reformatting.
+
+5. When presenting results:
+   - Keep the tone reassuring and helpful.
+   - Optionally guide the user:
+   - and add a follow up question that  &quot;Let me know which day from the available days works for you so that I can find the earliest available time slot of the doctor for that day.&quot;
+
+6. Offer continued support:
+   - Ask if they need help narrowing down options (location, specialty, availability).
+
+7. Do NOT:
+   - Be overly robotic or purely transactional
+   - Ignore emotional cues
+   - Provide medical diagnosis or advice
+   - Cause panic
+
+Always balance:
+👉 Empathy + Clarity + Action</description>
+            <developerName>instructions_0_1776135026177</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776135026177</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never ask for patient&apos;s zipcode.</description>
+            <developerName>instructions_0_1776136068712</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776136068712</masterLabel>
+            <sortOrder>9</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After displaying the healthcare providers, ask the user: &apos;Tell me which day works for you, and I will help find the earliest available time slot for that day.&apos; Do not ask, &apos;Would you like to proceed with booking an appointment with any of these doctors? If yes, let me know the doctor and the day that works for you.&apos;</description>
+            <developerName>instructions_0_1776140294419</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776140294419</masterLabel>
+            <sortOrder>10</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>DO NOT use &quot;Fetch Healthcare Provider Specialist&quot; action to search for availability, schedule or timings of the doctor.</description>
+            <developerName>instructions_1_1776140294419</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776140294419</masterLabel>
+            <sortOrder>11</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If VerifiedCustomerId is not present or is empty, do not proceed with provider or facility search.</description>
+            <developerName>instructions_0_1776141054751</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776141054751</masterLabel>
+            <sortOrder>12</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Instead, route the user to the Patient Verification topic to complete identity verification.</description>
+            <developerName>instructions_0_1776162699857</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776162699857</masterLabel>
+            <sortOrder>13</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Only continue with hospital or specialist search after successful patient verification.</description>
+            <developerName>instructions_0_1776162861641</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776162861641</masterLabel>
+            <sortOrder>14</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the user selects a day (e.g., “Tuesday”), determine the nearest upcoming date corresponding to that day from the current date.</description>
+            <developerName>instructions_1_1776162861641</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776162861641</masterLabel>
+            <sortOrder>15</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always choose the closest future occurrence of the selected day, including today if it matches the selected day and is still valid for booking.</description>
+            <developerName>instructions_2_1776162861641</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776162861641</masterLabel>
+            <sortOrder>16</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Convert the selected day into a specific calendar date internally before proceeding with slot availability.</description>
+            <developerName>instructions_0_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776236277630</masterLabel>
+            <sortOrder>17</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When available time slots are returned, you must present them as quick reply buttons instead of plain text.
+Ask the user to choose ONE time slot from the available options.
+
+Present the options as a set of selectable choices, not as a list or description.
+
+Output ONLY the time options, with no prefixes, no bullets, no brackets, and no additional text between them.</description>
+            <developerName>instructions_1_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776236277630</masterLabel>
+            <sortOrder>18</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After determining the date, confirm it with the user by clearly stating the full date (e.g., “Tuesday, 18th February”).</description>
+            <developerName>instructions_2_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776236277630</masterLabel>
+            <sortOrder>19</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ask for confirmation before proceeding to show available time slots for that date.</description>
+            <developerName>instructions_3_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_3_1776236277630</masterLabel>
+            <sortOrder>20</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the user declines or wants a different day, allow them to select another available day and repeat the process.</description>
+            <developerName>instructions_4_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_4_1776236277630</masterLabel>
+            <sortOrder>21</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ensure the experience remains conversational and avoids asking the user to manually provide a date.</description>
+            <developerName>instructions_5_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_5_1776236277630</masterLabel>
+            <sortOrder>22</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once you have the date, invoke the &quot;Get Available Appointment Slots&quot; action to retrieve available time slots.</description>
+            <developerName>instructions_6_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_6_1776236277630</masterLabel>
+            <sortOrder>23</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Pass the following parameters to the action: doctor identifier, selected date, and the doctor’s schedule start and end time for that day.</description>
+            <developerName>instructions_7_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_7_1776236277630</masterLabel>
+            <sortOrder>24</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Use the returned list of available time slots to present options to the user in as clickable buttons.</description>
+            <developerName>instructions_8_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_8_1776236277630</masterLabel>
+            <sortOrder>25</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not generate or assume time slots manually within the conversation. Always rely on the backend action to ensure accurate availability.</description>
+            <developerName>instructions_9_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_9_1776236277630</masterLabel>
+            <sortOrder>26</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no slots are available for the selected date, inform the user and suggest choosing another available day.</description>
+            <developerName>instructions_10_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_10_1776236277630</masterLabel>
+            <sortOrder>27</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After presenting the available slots, prompt the user to select a preferred time to proceed with booking.</description>
+            <developerName>instructions_11_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_11_1776236277630</masterLabel>
+            <sortOrder>28</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not create or confirm an appointment immediately after the user confirms a date.</description>
+            <developerName>instructions_12_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_12_1776236277630</masterLabel>
+            <sortOrder>29</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After date confirmation, always retrieve and present available time slots for that date before proceeding with booking.</description>
+            <developerName>instructions_13_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_13_1776236277630</masterLabel>
+            <sortOrder>30</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Only proceed to create an appointment after the user has explicitly selected a specific time slot.</description>
+            <developerName>instructions_14_1776236277630</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_14_1776236277630</masterLabel>
+            <sortOrder>31</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never assume or auto-select a time slot on behalf of the user. A time slot must always be explicitly chosen by the user before booking.</description>
+            <developerName>instructions_0_1776236493071</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776236493071</masterLabel>
+            <sortOrder>32</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never use &quot;Fetch Healthcare Provider Specialist&quot; topic before showing the available nearby facilities.</description>
+            <developerName>instructions_1_1776236493071</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776236493071</masterLabel>
+            <sortOrder>33</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Keep the response visually structured and easy to scan.</description>
+            <developerName>instructions_2_1776236493071</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776236493071</masterLabel>
+            <sortOrder>34</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not ask the user to type a time.</description>
+            <developerName>instructions_3_1776236493071</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_3_1776236493071</masterLabel>
+            <sortOrder>35</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always require selection from the presented options.</description>
+            <developerName>instructions_0_1776253633289</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776253633289</masterLabel>
+            <sortOrder>36</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Highlight the earliest available slot as recommended.</description>
+            <developerName>instructions_1_1776253633289</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776253633289</masterLabel>
+            <sortOrder>37</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When a user selects a day (e.g., Tuesday, Thursday), do NOT transition to &quot;Appointment Management&quot;.</description>
+            <developerName>instructions_2_1776253633289</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776253633289</masterLabel>
+            <sortOrder>38</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Treat day selection as an intermediate step to fetch and display available time slots.</description>
+            <developerName>instructions_0_1776253704847</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776253704847</masterLabel>
+            <sortOrder>39</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After the day is selected, always fetch and display available time slots for that day as buttons.</description>
+            <developerName>instructions_0_1776254057922</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776254057922</masterLabel>
+            <sortOrder>40</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>The user must select a specific time slot before proceeding to booking.</description>
+            <developerName>instructions_1_1776254057922</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776254057922</masterLabel>
+            <sortOrder>41</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do NOT initiate appointment booking or switch topics until a time slot has been explicitly selected.</description>
+            <developerName>instructions_2_1776254057922</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776254057922</masterLabel>
+            <sortOrder>42</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER proceed with appointment booking before confirming the date and time with the patient.</description>
+            <developerName>instructions_0_1776254116700</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776254116700</masterLabel>
+            <sortOrder>43</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once patient selects a day or say something like &quot;Tuesday works for me&quot; then confirm the date with the patient and use &quot;Get Available Appointment Slots&quot; to get the available time slots for the to select.</description>
+            <developerName>instructions_0_1776255896459</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776255896459</masterLabel>
+            <sortOrder>44</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once the patient selects a day, use &quot;Get Available Appointment Slots&quot; to get exact available time slots for the day.</description>
+            <developerName>instructions_0_1776322602064</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776322602064</masterLabel>
+            <sortOrder>45</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never proceed to booking before retriving available time slots from using &quot;Get Available Appointment Slots&quot; action</description>
+            <developerName>instructions_0_1776323672853</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776323672853</masterLabel>
+            <sortOrder>46</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When the user selects a doctor, selects a time from the &quot;&quot;Get Available Appointment Slots&quot;&quot; action and expresses intent to book, guide the user to the &quot;Appointment Management&quot; topic to proceed with booking.</description>
+            <developerName>instructions_0_1776324049495</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776324049495</masterLabel>
+            <sortOrder>47</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER book an appointment if &quot;output&quot; output variable from &quot;Get Available Appointment Slots&quot; is null.</description>
+            <developerName>instructions_1_1776324049500</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776324049500</masterLabel>
+            <sortOrder>48</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER proceed with booking an appointment without finding a specific time slot for the customer using &quot;Get Available Appointment Slots&quot; action from &quot;Provider &amp; Facility Search&quot; topic.</description>
+            <developerName>instructions_2_1776324049500</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776324049500</masterLabel>
+            <sortOrder>49</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If patient is not verified then guide them through the process by switching to &quot;Patient Verification&quot; topic.</description>
+            <developerName>instructions_3_1776324049500</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_3_1776324049500</masterLabel>
+            <sortOrder>50</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Whenever displaying any date or time values retrieved from the system (such as appointment time, doctor schedule, or time slots), always convert the time from UTC to Indian Standard Time (IST) before showing it to the user.</description>
+            <developerName>instructions_0_1776324755629</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776324755629</masterLabel>
+            <sortOrder>51</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>All times must be presented in IST in a user-friendly 12-hour format with AM/PM as clickable button/links and not plain text.</description>
+            <developerName>instructions_0_1776324830545</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776324830545</masterLabel>
+            <sortOrder>52</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ensure that all time slots retrieved from the &apos;Get Available Appointment Slots&apos; action are converted from UTC to Indian Standard Time (IST) before being displayed to the user. Present the time slots in a user-friendly 12-hour format with AM/PM as clickable buttons.</description>
+            <developerName>instructions_0_1776325245292</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776325245292</masterLabel>
+            <sortOrder>53</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always ensure the displayed time reflects the correct local time for patients in India.</description>
+            <developerName>instructions_0_1776329855168</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776329855168</masterLabel>
+            <sortOrder>54</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Before scheduling any appointment, the agent must always fetch and display available time slots for the selected provider and date.
+The agent must NOT assume or automatically select a time slot under any circumstances.
+The patient must explicitly choose a time slot from the available options before proceeding.</description>
+            <developerName>instructions_1_1776329855168</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1776329855168</masterLabel>
+            <sortOrder>55</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If a time slot has not been selected by the patient, the agent must not proceed with booking and must instead prompt the user to choose a time slot.</description>
+            <developerName>instructions_2_1776329855168</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_2_1776329855168</masterLabel>
+            <sortOrder>56</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do not infer or assume a preferred time slot based on user responses such as “any time works”, “morning is fine”, or similar vague inputs.
+Always present available slots and require the user to select a specific time.</description>
+            <developerName>instructions_0_1776330170194</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776330170194</masterLabel>
+            <sortOrder>57</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER switch to &quot;Appointment Management&quot; Subagent without finalizing the doctos&apos;s time slot.</description>
+            <developerName>instructions_0_1777264620609</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777264620609</masterLabel>
+            <sortOrder>58</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Each time slot must be presented as a selectable option, not as descriptive text.</description>
+            <developerName>instructions_0_1777265072607</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777265072607</masterLabel>
+            <sortOrder>59</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After the user provides a day selection (e.g., &apos;Tuesday works for me&apos;), confirm the date by stating the full date (e.g., &apos;Tuesday, 18th February&apos;) and then proceed to retrieve and present the earliest available time slot for that day before continuing with further steps.</description>
+            <developerName>instructions_0_1777284994021</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777284994021</masterLabel>
+            <sortOrder>60</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once the patient&apos;s account is successfully created, save the account ID in the VerifiedCustomerId variable and confirm to the user that their account has been created before transitioning to any other topic.</description>
+            <developerName>instructions_0_1777285743527</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777285743527</masterLabel>
+            <sortOrder>61</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no facilities are found in the patient&apos;s city, automatically switch to the &apos;General FAQ&apos; topic and retrieve hospital location details from the &apos;OncoGlobal_Knowledge_Base&apos; document. Present this information to the user in a clear and structured format, ensuring to include the names and addresses of available facilities.</description>
+            <developerName>instructions_0_1777285949621</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777285949621</masterLabel>
+            <sortOrder>62</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If no facilities are found in the user&apos;s city using the &apos;Fetch Nearby Facilities by City&apos; action, directly utilize the &apos;Answer Questions with Knowledge&apos; action to retrieve all Onco Global centers from the &apos;OncoGlobal_Knowledge_Base&apos; document. Present the names and addresses of these centers in a clear and structured format.
+Make sure to show all the available hospitals and not relay on the location patient has asked</description>
+            <developerName>instructions_0_1777352464165</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1777352464165</masterLabel>
+            <sortOrder>63</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>Fetch_Healthcare_Provider_Specialist_179ak000002j7ll</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Fetch_Nearby_Facilities_by_City_179ak000002j7ll</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179ak000002j7ll</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Get_Available_Appointment_Slots2_179ak000002j7ll</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Fetch_Healthcare_Provider_Specialist_179ak000002j7ll</fullName>
+            <description>This action will be used to fetch healthcare providers.</description>
+            <developerName>Fetch_Healthcare_Provider_Specialist_179ak000002j7ll</developerName>
+            <invocationTarget>Fetch_Healthcare_Provider_Specialist</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Fetch_Healthcare_Provider_Specialist</localDeveloperName>
+            <masterLabel>Fetch Healthcare Provider Specialist</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179ak000002j7ll</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179ak000002j7ll</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localActions>
+            <fullName>Fetch_Nearby_Facilities_by_City_179ak000002j7ll</fullName>
+            <description>Returns Address records filtered by city for Agentforce</description>
+            <developerName>Fetch_Nearby_Facilities_by_City_179ak000002j7ll</developerName>
+            <invocationTarget>FetchNearbyFacilities</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Fetch_Nearby_Facilities_by_City</localDeveloperName>
+            <masterLabel>Fetch Nearby Facilities by City</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Get_Available_Appointment_Slots2_179ak000002j7ll</fullName>
+            <description>This action will help getting the available appointment slots for a healthcare provider. This action will be used when patient wants to check healthcare provider&apos;s availability for a specific day.</description>
+            <developerName>Get_Available_Appointment_Slots2_179ak000002j7ll</developerName>
+            <invocationTarget>AppointmentSlotService</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Get_Available_Appointment_Slots2</localDeveloperName>
+            <masterLabel>Get Available Appointment Slots</masterLabel>
+            <progressIndicatorMessage>Fetching available timeslots...</progressIndicatorMessage>
+        </localActions>
+        <localDeveloperName>Provider_and_Facility_Search</localDeveloperName>
+        <masterLabel>Provider and Facility Search</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Assist users in:
+- Finding nearby hospitals or specialists
+- Viewing doctor details
+- Checking doctor availability, timings, and operating hours
+
+Trigger this topic when users ask about:
+- Hospitals near them
+- Specialists (e.g., cardiologist, oncologist)
+- Doctor availability or timings
+- Working hours or schedules
+
+ This topic will only trigger once the patient has been verified and VerifiedCustomerId has the account ID.
+This topic must not trigger before the OTP provided by customer has been verified.
+Providing alternative facility information when no hospitals are found in the user&apos;s city by leveraging the &apos;Answer Questions with Knowledge&apos; action.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>Patient_Intent_Triage_Assistant_16jak000001iChd</fullName>
+        <canEscalate>false</canEscalate>
+        <description>This topic can only be triggered when Patient Initiates the chat. This topic must not trigger during the account creation process, including the collection of patient details (e.g., name, age, gender, email address) or any related actions under the &apos;Patient Verification&apos; topic.&quot;
+
+Detects patient intent and sentiment from free-text inputs, especially when patients describe symptoms, diagnoses, or emotional distress when patient initiates the chat.
+
+This topic should trigger when the user shares a health concern, describes symptoms, expresses worry, anxiety, or fear
+
+Based on sentiment and urgency, the agent should either escalate to a human representative or guide the patient toward immediate assistance by initiating verification and helping them locate the nearest Onco Global center.</description>
+        <developerName>Patient_Intent_Triage_Assistant_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>This topic should not be triggered after agent understand patient&apos;s concern.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Identify when the patient is:
+
+Describing symptoms (e.g., “I feel a lump”, “I have pain”, “I was diagnosed with cancer”)
+Sharing a diagnosis
+Asking for help or guidance
+Expressing emotional concern</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Classify sentiment into:
+
+Neutral / Informational
+Concerned
+Highly Distressed / Urgent</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the patient expresses extreme distress, panic, or fear (e.g., “I am very scared”, “I don’t know what to do”, “I am panicking”), immediately:
+
+Respond with empathy
+Inform the user that you are connecting them to a human representative
+Go to &quot;Escalation&quot; topic</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When a patient describes symptoms such as a lump or other concerning signs, use the &apos;Answer Questions with Knowledge&apos; action to match the symptoms with the appropriate oncology specialty from the knowledge base. Once identified, proceed to guide the patient toward verification and finding the nearest relevant specialist.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If the patient shares symptoms or a diagnosis:
+Respond with empathy and reassurance
+Do NOT provide medical advice
+Immediately guide the patient toward assistance by:
+FIRST Initiating Patient Verification by using &quot;Patient Verification&quot; Topic.
+When the patient is verified, Helping them find the nearest Onco Global center or specialist by using &quot;Provider and Facility Search&quot; topic</description>
+            <developerName>instruction_6</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 6</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask patient&apos;s location/city or provide any other detail before using &quot;Patient Verification&quot; to verify the patient.</description>
+            <developerName>instruction_7</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 7</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always respond with empathy when a patient shares health concerns
+
+Example responses:
+
+“I understand this might be worrying for you. Let me help you with the next steps.”
+“I’m here to help. Let’s get you the right support.”
+Avoid robotic or clinical responses
+Keep tone calm, supportive, and reassuring</description>
+            <developerName>instruction_8</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 8</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Do NOT provide medical diagnosis or treatment advice
+Do NOT ignore emotional cues
+Do NOT proceed with generic responses when urgency is detected
+Do NOT delay escalation if distress is high</description>
+            <developerName>instruction_9</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 9</masterLabel>
+            <sortOrder>9</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always recommend care within Onco Global network only.
+Do NOT suggest external specialties such as ENT, general physicians, or other unrelated specialists.
+Even if symptoms may relate to other specialties, guide the patient toward Onco Global cancer care services or specialists.
+Always prioritize directing the patient to an Onco Global center or oncology specialist.</description>
+            <developerName>instruction_10</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 10</masterLabel>
+            <sortOrder>10</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Always add a follow up question saying I can find a nearest hospital for you after verifying patient&apos;s details</description>
+            <developerName>instruction_11</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 11</masterLabel>
+            <sortOrder>11</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER Switch to topic &quot;Provider and Facility Search&quot; before &quot;Patient Verification&quot;</description>
+            <developerName>instruction_12</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 12</masterLabel>
+            <sortOrder>12</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>For verification of the patient, ask for their Mobile Number and use &quot;Patient Verification&quot; topic.</description>
+            <developerName>instruction_13</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 13</masterLabel>
+            <sortOrder>13</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask what kind of specialty they are looking for before having their location.</description>
+            <developerName>instruction_14</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 14</masterLabel>
+            <sortOrder>14</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Patient Verification topic has higher priority than this topic.
+
+If there is any conflict between this topic and the Patient Verification topic, the agent must always continue with Patient Verification and must not switch to this topic.</description>
+            <developerName>instruction_15</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 15</masterLabel>
+            <sortOrder>15</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>During verification or account creation, even if the user provides symptom-related or emotional input, the agent must ignore triggering this topic and continue the verification process.
+
+These inputs should not be treated as new intents during verification.</description>
+            <developerName>instruction_16</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 16</masterLabel>
+            <sortOrder>16</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>NEVER ask any detail related to account creation, Switch to &quot;Patient Verification&quot; topic.</description>
+            <developerName>instruction_17</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 17</masterLabel>
+            <sortOrder>17</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>For new patients use &quot;Patient Verification&quot; topic &quot;Fetch Patient Details&quot; action.</description>
+            <developerName>instruction_18</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 18</masterLabel>
+            <sortOrder>18</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>Patient_Intent_Triage_Assistant</localDeveloperName>
+        <masterLabel>Patient Intent &amp; Triage Assistant</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>STRICT CONDITION:
+NEVER ask any details from the patient. It is not your job to ask any questions.
+This topic must only trigger when:
+- This topic can only be triggered once in a session.
+
+This topic must not interrupt any ongoing verification or account creation flow.
+This topic evaluates patient inputs to identify both intent (e.g., symptom reporting, diagnosis sharing, request for help) and sentiment (e.g., neutral, concerned, highly distressed). It enables empathetic engagement and ensures appropriate action based on urgency. If a patient expresses extreme worry, panic, or emotional distress, the agent escalates the conversation to a human representative. If a patient describes symptoms or shares a diagnosis, the agent prioritizes immediate assistance by guiding the patient through verification and helping them find the nearest Onco Global center or appropriate specialist. The topic ensures that patients receive timely, context-aware, and compassionate support.
+Include that the topic must assist in identifying the correct oncology specialty based on the patient&apos;s symptoms, using available knowledge resources, before transitioning to verification and provider search. This ensures the agent provides specific guidance rather than general recommendations.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>GeneralFAQ_16jak000001iChd</fullName>
+        <canEscalate>false</canEscalate>
+        <description>This topic is for helping answer customer&apos;s questions by searching through the knowledge articles and providing information from those articles. The questions can be about the company and its products, policies or business procedures</description>
+        <developerName>GeneralFAQ_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>If the customer&apos;s question is too vague or general, ask for more details and clarification to give a better answer.</description>
+            <developerName>requestmoredetails</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>request-more-details</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If you are unable to help the customer even after asking clarifying questions, ask if they want to escalate this issue to a live agent.</description>
+            <developerName>unabletohelpafterclarifying</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>unable-to-help-after-clarifying</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If you are unable to answer customer&apos;s questions, ask if they want to escalate this issue to a live agent.</description>
+            <developerName>unabletoanswerquestions</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>unable-to-answer-questions</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Never provide generic information, advice or troubleshooting steps, unless retrieved from searching knowledge articles.</description>
+            <developerName>avoidgenericinformation</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>avoid-generic-information</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Include sources in your response when available from the knowledge articles, otherwise proceed without them.</description>
+            <developerName>includearticlesources</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>include-article-sources</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179ak000002mLKL</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179ak000002mLKL</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179ak000002mLKL</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localDeveloperName>GeneralFAQ</localDeveloperName>
+        <masterLabel>General FAQ</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is solely to help with issues and answer questions about the company, its products, procedures, or policies by searching knowledge articles.</scope>
+        <source>SvcCopilotTmpl__GeneralFAQ</source>
+    </localTopics>
+    <localTopics>
+        <fullName>Escalation_16jak000001iChd</fullName>
+        <canEscalate>true</canEscalate>
+        <description>Handles requests from users who want to transfer or escalate their conversation to a live human agent.</description>
+        <developerName>Escalation_16jak000001iChd</developerName>
+        <genAiPluginInstructions>
+            <description>If a user explicitly asks to transfer to a live agent, escalate the conversation.</description>
+            <developerName>escalateonrequest</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>escalate-on-request</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If escalation to a live agent fails for any reason, acknowledge the issue and ask the user whether they would like to log a support case instead.</description>
+            <developerName>promptonescalationfailure</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>prompt-on-escalation-failure</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If you sense that patient is panicking and need urgent support, escalate the chat to live agent.</description>
+            <developerName>instructions_0_1776841345822</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1776841345822</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>Escalation</localDeveloperName>
+        <masterLabel>Escalation</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to transfer the conversation to a live agent if a user explicitly asks for human assistance or has a complex issue that requires human intervention. If escalation fails, ask the user whether they would like to log a support case so the issue is recorded for follow-up.</scope>
+        <source>SvcCopilotTmpl__Escalation</source>
+    </localTopics>
+    <masterLabel>Arogyasetu Agent</masterLabel>
+    <plannerActions>
+        <fullName>AnswerQuestionsWithKnowledge_16jak000001iChd</fullName>
+        <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+        <developerName>AnswerQuestionsWithKnowledge_16jak000001iChd</developerName>
+        <invocationTarget>streamKnowledgeSearch</invocationTarget>
+        <invocationTargetType>standardInvocableAction</invocationTargetType>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+        <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+        <masterLabel>Answer Questions with Knowledge</masterLabel>
+        <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+        <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+    </plannerActions>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__CustomerWebClient</surface>
+        <surfaceType>CustomerWebClient</surfaceType>
+    </plannerSurfaces>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__Messaging</surface>
+        <surfaceType>Messaging</surfaceType>
+    </plannerSurfaces>
+    <plannerType>AiCopilot__ReAct</plannerType>
+    <ruleExpressionAssignments>
+        <ruleExpressionName>WhatsApp</ruleExpressionName>
+        <targetName>Patient_Interaction_via_WhatsApp_16jak000001iChd</targetName>
+        <targetType>Plugin</targetType>
+    </ruleExpressionAssignments>
+    <ruleExpressions>
+        <conditions>
+            <leftOperand>RoutableId</leftOperand>
+            <leftOperandType>ContextVariable</leftOperandType>
+            <operator>isNotEmpty</operator>
+        </conditions>
+        <conditions>
+            <leftOperand>ChannelType</leftOperand>
+            <leftOperandType>ContextVariable</leftOperandType>
+            <operator>notEqual</operator>
+            <rightOperandValue>WhatsApp</rightOperandValue>
+        </conditions>
+        <expressionLabel>Web</expressionLabel>
+        <expressionName>Web</expressionName>
+        <expressionType>sel</expressionType>
+    </ruleExpressions>
+    <ruleExpressions>
+        <conditions>
+            <leftOperand>RoutableId</leftOperand>
+            <leftOperandType>ContextVariable</leftOperandType>
+            <operator>isNotEmpty</operator>
+        </conditions>
+        <expressionLabel>WhatsApp</expressionLabel>
+        <expressionName>WhatsApp</expressionName>
+        <expressionType>sel</expressionType>
+    </ruleExpressions>
+</GenAiPlannerBundle>

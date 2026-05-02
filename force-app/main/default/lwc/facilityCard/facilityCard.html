@@ -1,0 +1,64 @@
+<template>
+    <template if:true={facilities.length}>
+        <div class="slds-grid slds-wrap slds-gutters">
+
+            <template for:each={facilities} for:item="f">
+                <div key={f.id} class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-3">
+
+                    <article class="slds-card slds-m-around_small">
+
+                        <!-- Header -->
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+
+                                <div class="slds-media__figure">
+                                    <lightning-icon icon-name="standard:location" size="small"></lightning-icon>
+                                </div>
+
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title slds-truncate">
+                                        {f.parentName}
+                                    </h2>
+                                </div>
+
+                            </header>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="slds-card__body slds-card__body_inner">
+
+                            <!-- Address -->
+                            <p class="slds-text-body_regular slds-m-bottom_small">
+                                📍 {f.fullAddress}
+                            </p>
+
+                            <!-- Badges -->
+                            <div class="slds-m-bottom_small">
+                                <span class="slds-badge slds-m-right_x-small">{f.city}</span>
+                                <span class="slds-badge slds-m-right_x-small">{f.state}</span>
+                                <span class="slds-badge">{f.postalCode}</span>
+                            </div>
+
+                            <!-- Directions -->
+                            <template if:true={f.drivingDirections}>
+                                <div class="slds-text-color_weak slds-text-body_small">
+                                    🚗 {f.drivingDirections}
+                                </div>
+                            </template>
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </template>
+
+        </div>
+    </template>
+
+    <template if:false={facilities.length}>
+        <div class="slds-text-align_center slds-text-color_weak slds-p-around_medium">
+            No facilities found
+        </div>
+    </template>
+</template>

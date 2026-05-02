@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Returns Address records filtered by city for Agentforce</description>
+    <developerName>Fetch_Nearby_Facilities_by_City</developerName>
+    <invocationTarget>FetchNearbyFacilities</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <localDeveloperName>Fetch_Nearby_Facilities_by_City</localDeveloperName>
+    <masterLabel>Fetch Nearby Facilities by City</masterLabel>
+</GenAiFunction>

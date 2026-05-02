@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>Ev47dXIK0iNOxwaTKElYOl2J6rIubmYLYPDFWNohRoo=_1</activeVersionIdentifier>
+    <developerName>Patient_Account_Summary</developerName>
+    <masterLabel>Patient Account Summary</masterLabel>
+    <overridable>false</overridable>
+    <relatedEntity>Account</relatedEntity>
+    <templateVersions>
+        <content>You are a healthcare assistant responsible for generating a clear and concise patient summary for clinical use.
+
+Using the provided account details, create a well-written paragraph summarizing the patient’s information. Focus primarily on the Patient Summary field, and enrich it using other available details such as name, gender, and any relevant context.
+
+Instructions:
+- Write a single, professional paragraph.
+- Prioritize the Patient Summary field as the main source of information.
+- Incorporate key details such as patient name, gender, and any relevant background if available.
+- Ensure the summary highlights the patient’s condition, concerns, symptoms, and recent interactions (such as appointment booking if mentioned).
+- Maintain a clinical and neutral tone suitable for healthcare providers.
+- Avoid repetition and unnecessary filler content.
+- Do not include labels, bullet points, or headings.
+- Do not hallucinate or add information that is not present in the input.
+
+Output only the final paragraph.
+
+Input Data:
+{!$RecordSnapshot:Account.snapshot} @
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <description>Retrieves record data for grounding a prompt template.</description>
+            <label>Record Snapshot</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:Account.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:Account</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>Ev47dXIK0iNOxwaTKElYOl2J6rIubmYLYPDFWNohRoo=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

@@ -1,0 +1,24 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AppointmentMessage" : {
+      "title" : "AppointmentMessage",
+      "description" : "If this is not null then tell the patient that their appointment has been scheduled.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "ErrorMessage" : {
+      "title" : "ErrorMessage",
+      "description" : "If this is not null then tell the patient that there was some issue while scheduling their appointment and ask if they would like to connect to a live agent",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Reminder_SMS</name>
+        <label>Send Reminder SMS</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>TwilioSMSAction</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>messageBody</name>
+            <value>
+                <elementReference>MessageBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toPhone</name>
+            <value>
+                <elementReference>MobileNumber</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSMSAction</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>If_appointment_is_scheduled_for_tomorrow</name>
+        <label>If appointment is scheduled for tomorrow?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>BookingDate</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>ScheduleDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Reminder_SMS</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>BookingDate</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.EarliestStartTime})</expression>
+    </formulas>
+    <formulas>
+        <name>CheckDateTime</name>
+        <dataType>Boolean</dataType>
+        <expression>DATEVALUE({!$Record.EarliestStartTime}) = DATEVALUE(NOW()) + 1</expression>
+    </formulas>
+    <formulas>
+        <name>MobileNumber</name>
+        <dataType>String</dataType>
+        <expression>&apos;+91&apos;+{!$Record.Account.PersonMobilePhone}</expression>
+    </formulas>
+    <formulas>
+        <name>ScheduleDate</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE(NOW())+1</expression>
+    </formulas>
+    <interviewLabel>Schedule Reminder SMS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Schedule Reminder SMS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Wait_for_Amount_of_Time_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Scheduled</stringValue>
+            </value>
+        </filters>
+        <object>ServiceAppointment</object>
+        <schedule>
+            <dayOfMonthToRun>0</dayOfMonthToRun>
+            <frequency>Daily</frequency>
+            <frequencyNumber>0</frequencyNumber>
+            <startDate>2026-04-29</startDate>
+            <startTime>14:45:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>MessageBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.Account.FirstName}, a reminder that your appointment with {!$Record.Doctor__r.Name} is tomorrow.
+Please carry your previous reports.
+To modify/cancel the booking, you can visit - https://sl1nk.com/weecagl
+Rest assured we are following all safety protocols.
+Thank You!</text>
+    </textTemplates>
+    <waits>
+        <name>Wait_for_Amount_of_Time_1</name>
+        <elementSubtype>WaitDuration</elementSubtype>
+        <label>Wait for Amount of Time 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Path</defaultConnectorLabel>
+        <waitEvents>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>If_appointment_is_scheduled_for_tomorrow</targetReference>
+            </connector>
+            <label>el_0</label>
+            <offset>1</offset>
+            <offsetUnit>Minutes</offsetUnit>
+        </waitEvents>
+    </waits>
+</Flow>

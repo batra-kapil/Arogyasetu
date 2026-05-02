@@ -1,0 +1,30 @@
+{
+  "required" : [ "searchQuery" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "searchQuery" : {
+      "title" : "Search Query",
+      "description" : "Free-text input that specifies what the user wants to search for.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "searchProvider" : {
+      "title" : "Search Provider",
+      "description" : "The search provider used for web searches.",
+      "const" : "brightdata",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "siteFilter" : {
+      "title" : "Allowed Domains",
+      "description" : "A comma-separated list of up to 10 allowed domains to filter web search results.",
+      "const" : "https://tmc.gov.in/, https://www.rgcirc.org/, https://www.indiancancersociety.org/, https://www.aiims.edu/index.php/en",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

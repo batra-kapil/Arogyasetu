@@ -1,0 +1,35 @@
+{
+  "required" : [ "doctorId", "scheduleEnd", "scheduleStart", "selectedDate" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "doctorId" : {
+      "title" : "doctorId",
+      "description" : "Store the healthcare provider Id",
+      "lightning:type" : "lightning__recordIdType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "scheduleEnd" : {
+      "title" : "scheduleEnd",
+      "description" : "Store the end time of doctor's schedule for that day",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "scheduleStart" : {
+      "title" : "scheduleStart",
+      "description" : "Store the start time of doctor's schedule for that day",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "selectedDate" : {
+      "title" : "selectedDate",
+      "description" : "Store the date selected for appointment",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

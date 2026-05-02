@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+}
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #16325c;
+}
+
+/* Address */
+.address-block {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.address-text {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Directions */
+.directions-block {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+}
+
+.directions-text {
+    font-size: 13px;
+    color: #54698d;
+    line-height: 1.4;
+}
+
+/* Empty */
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}

@@ -1,0 +1,45 @@
+<template>
+    <template if:true={facilities.length}>
+        <div class="container">
+            <template for:each={facilities} for:item="f">
+
+                <lightning-card key={f.id} class="card">
+
+                    <div class="slds-p-around_medium">
+
+                        <!-- Header -->
+                        <div class="header">
+                            <lightning-icon icon-name="standard:account" size="small"></lightning-icon>
+                            <h2 class="title">{f.parentName}</h2>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="address-block">
+                            <lightning-icon icon-name="utility:location" size="x-small"></lightning-icon>
+                            <div class="address-text">
+                                {f.fullAddress}
+                            </div>
+                        </div>
+
+                        <!-- Directions -->
+                        <template if:true={f.drivingDirections}>
+                            <div class="directions-block">
+                                <lightning-icon icon-name="utility:travel_and_places" size="x-small"></lightning-icon>
+                                <div class="directions-text">
+                                    {f.drivingDirections}
+                                </div>
+                            </div>
+                        </template>
+
+                    </div>
+
+                </lightning-card>
+
+            </template>
+        </div>
+    </template>
+
+    <template if:false={facilities.length}>
+        <p class="empty">No facilities found</p>
+    </template>
+</template>

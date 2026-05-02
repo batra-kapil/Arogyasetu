@@ -1,0 +1,13 @@
+.container {
+    padding: 8px;
+}
+
+.section {
+    margin-bottom: 16px;
+}
+
+.divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 12px 0;
+}

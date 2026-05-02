@@ -1,0 +1,24 @@
+<template>
+    <div class="container">
+
+        <template if:true={hasSlots}>
+            <template for:each={slots} for:item="slot">
+
+                <div key={slot.value}
+                     class={slot.className}
+                     data-value={slot.value}
+                     onclick={handleClick}>
+
+                    {slot.label} <!-- ✅ THIS IS CRITICAL -->
+
+                </div>
+
+            </template>
+        </template>
+
+        <template if:false={hasSlots}>
+            <div class="empty">No slots available</div>
+        </template>
+
+    </div>
+</template>

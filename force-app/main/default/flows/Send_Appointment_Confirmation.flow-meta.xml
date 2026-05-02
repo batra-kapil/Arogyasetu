@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Confirmation_SMS</name>
+        <label>Send Confirmation SMS</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>TwilioSMSAction</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>messageBody</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>toPhone</name>
+            <value>
+                <stringValue>+918290104905</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>TwilioSMSAction</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Send Appointment Confirmation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Appointment Confirmation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Confirmation_SMS</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>
