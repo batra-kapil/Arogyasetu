@@ -117,6 +117,9 @@ Create a Named Credential named `Twilio_API` linked to the External Credential a
 ### Data Cloud Setup
 Import the Datakit from `data-cloud/datakits/` and run the identity resolution ruleset. Verify unified profiles exist in Data Cloud → Data Explorer → Unified Individual object.
 
+### RAG Knowledge Base
+Upload `docs/OncoGlobal_Knowledge_Base.pdf` to Agentforce Knowledge and link it as a data source on the Agentforce agent.
+
 ---
 
 ## Potential Further Improvements
