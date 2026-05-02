@@ -1,8 +1,3 @@
-Let me check the Knowledge Base document for accurate details before writing the README.Good — I have the full document. Here is the README, ready to paste directly into VS Code or GitHub as `README.md`:
-
----
-
-````markdown
 # Aarogyasetu — Digital Front Door for Onco Global
 
 **Salesforce Agentforce Hackathon 2026**
@@ -150,4 +145,3 @@ Upload `docs/OncoGlobal_Knowledge_Base.docx` to Agentforce Knowledge and link it
 ---
 
 *Salesforce Agentforce Hackathon 2026 — Onco Global Digital Front Door*
-````
